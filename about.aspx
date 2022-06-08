@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>本站简介</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+  <!-- 新 Bootstrap4 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+ 
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+ 
+<!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+ 
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    /*定义滚动条高宽及背景
+
+ 高宽分别对应横竖滚动条的尺寸*/
+
+::-webkit-scrollbar
+
+{
+
+    width:5px;
+
+    height:5px;
+
+    background-color:#F5F5F5;
+
+}
+
+/*定义滚动条轨道
+
+ 内阴影+圆角*/
+::-webkit-scrollbar-track
+
+{
+
+
+    background-color:#F5F5F5;
+ 
+
+}
+
+/*定义滑块
+
+ 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb
+
+{
+
+
+
+
+    background-color:#555;
+
+}
+    
+  *::selection {
+    background-color:#FFFACD;
+    color: black ;
+}
+ 
+*::-moz-selection {
+    background-color:#FFFACD;
+    color: black ;
+}
+ 
+*::-webkit-selection {
+    background-color:#FFFACD ;
+    color: black ;
+}
+
+.x{padding:4px 10px;color:white;background-color:royalblue;font-size:16px;text-decoration:none;border-radius:4px;}
+.x:hover{;color:white;background-color:royalblue;text-decoration:none;}
+
+.btn:active {box-shadow:none;}
+.btn:focus {box-shadow:none;}
+.btn-info {border-radius:0;outline:none;border:none;}
+.btn-info:hover{background-color:black ;}
+.btn{color:white;}
+.btn:hover{color:white;}
+
+.dropdown-menu {border-radius:0;border:none;padding:0;box-shadow:none;outline:none;background-color:black;box-shadow: none;}
+.dropdown-item{padding: 13px 10px;color:white;font-size:14px;transition:0.1s;border:none;}
+.dropdown-item:hover{color:red;background-color:black ;transition:0.1s;}
+
+.list-group-item {border:none;border-radius:0;}
+.card {border-radius:0;border:none;}
+.list-group-item-action:hover{color:blue;background-color:white;}
+.list-group-item-action:focus{background-color:white;}
+.list-group-item-action:active{background-color:white;}
+
+biaoq{font-size:12px;}
+biaos{font-size:16px; color:grey;text-decoration:bold;}
+biaoz{background-color:red;border-radius:4px;padding:3px;color:white;}
+
+.xuanzhong {color:red;}
+
+
+
+  </style>
+
+</head>
+<body>
+<div style="background-color: black;box-shadow: 1px 3px 12px gray;">
+ <div class="container" >
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-0">
+      <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+       
+        <img src="https://img1.imgtp.com/2022/06/08/ZllM7chE.png" height="25px">
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/"  class="btn btn-sm"> 首页 </a></li>
+          <li class="nav-item"><a href="#"  class="btn btn-sm   xuanzhong" data-bs-toggle="dropdown">网站简介</a>
+ <div class="dropdown-menu" >
+    
+   <a href="about.aspx" class="dropdown-item" >关于本站</a>
+   
+
+    
+
+  </div>
+         </li>
+         <li class="nav-item"><a href="#"  class="btn  btn-sm " data-bs-toggle="dropdown">广告投放</a>
+ <div class="dropdown-menu" >
+    
+   <a href="ad.aspx" class="dropdown-item" target="_blank">学习宝广告</a>
+   <a href="ad.aspx" class="dropdown-item" target="_blank">春潮广告</a>
+    
+
+  </div>
+         </li>
+          
+     
+ 
+        
+        <li class="nav-item"><a href="#" class="btn btn-sm" data-bs-toggle="dropdown"> 更多链接 </a>
+        <div class="dropdown-menu" >
+    <a class="dropdown-item" target="_blank" href="https://space.bilibili.com/494631046">学习宝官方账号</a>
+    <a class="dropdown-item" target="_blank" href="https://xxblab.github.io">春潮社</a>
+    
+
+  </div></li>
+
+      </ul>
+    </header>
+  </div>  
+  </div>
+<!-- 轮播 -->
+<div style="margin-left:3%;margin-right:3%;margin-top:20px;">
+ 
+<img src="https://img1.imgtp.com/2022/06/08/qXk9tS1q.png" width="100%" >
+</div>
+
+
+
+
+  <div style="margin-left:8%;margin-right:8%;">
+    <br>
+  <div class="card ">
+    <div class="card-header text-dark  bg-white"><h6>春潮社简介</h6></div>
+    <div class="card-body "> 
+<p style="color:grey;font-size:14px;" >春潮社2020年10月16日成立于中国吉林省长春市，是一家以东北师范大学附属中学为平台，高、职学生为主体成员的学生自组织机构。历时一年余发展，春潮社已经成为拥有短视频、长视频、文字专栏等多模块、多业务、多导向、长跨度发展的综合性文化传播机构。
+</p><p style="color:grey;font-size:14px;">
+我社立发展立足于校园，以高辨识度的校园文化、校园生活为背景，创造了一大批优秀的文艺作品。例如，旗下B站学习宝官方账号《高中摆烂人图鉴》系列全网收获30万播放量。</p>
+
+</p>
+
+</div>
+
+
+
+
+ 
+    </div>
+
+
+  <div class="card ">
+    <div class="card-header text-dark  bg-white"><h6>春潮在线简介</h6></div>
+    <div class="card-body "> 
+<p style="color:grey;font-size:14px;" >春潮在线网站（https://dbsdfz.github.io）是春潮社2022年举办的网页客户端，主要用于宣传春潮社作品、成果展示和业务交流。
+</p><p style="color:grey;font-size:14px;">
+案例展示：春潮社×学习宝官方账号</p>
+
+</p>
+
+</div>
+
+
+
+
+ 
+    </div>
+
+
+
+  </div>
+</div>
+
+
+    </div> 
+</div>
+
+</div>
+
+
+<br>
+
+<div class="p-2" style="background-color:rgba(0, 0, 0, 0.3);">
+
+    <p style="color:black;text-align:center;font-size: 14px;padding-top:10px;">
+       © 2022   <a href="https://dbsdfz.github.io">春潮在线网</a> 版权所有
+        </p> 
+   
+    </div>
+
+
+</body>
+</html>
