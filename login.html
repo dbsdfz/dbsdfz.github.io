@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>管理后台登录</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
-  <!-- 新 Bootstrap4 核心 CSS 文件 -->
-<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
- 
-<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
-<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
- 
-<!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
-<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
- 
-<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
-<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <style type="text/css">
-    /*定义滚动条高宽及背景
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
 
- 高宽分别对应横竖滚动条的尺寸*/
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
 
+    <!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
 ::-webkit-scrollbar
 
 {
@@ -35,22 +31,18 @@
 
 }
 
-/*定义滚动条轨道
 
- 内阴影+圆角*/
 ::-webkit-scrollbar-track
 
 {
 
 
     background-color:#F5F5F5;
- 
+
 
 }
 
-/*定义滑块
 
- 内阴影+圆角*/
 
 ::-webkit-scrollbar-thumb
 
@@ -62,17 +54,17 @@
     background-color:#555;
 
 }
-    
+
   *::selection {
     background-color:steelblue;
     color: black ;
 }
- 
+
 *::-moz-selection {
     background-color:steelblue;
     color: black ;
 }
- 
+
 *::-webkit-selection {
     background-color:steelblue ;
     color: black ;
@@ -117,43 +109,43 @@ biaoz{background-color:red;border-radius:4px;padding:3px;color:white;}
 <body>
 <!-- 轮播 -->
 <div style="margin-left:3%;margin-right:3%;margin-top:20px;"><br><br>
- <center><img src="https://img1.imgtp.com/2022/06/10/eGHuZWD3.png" height="40px"></center><br><br>
+    <center><img src="https://s2.loli.net/2023/06/07/mqSUuKAXyMCOl2Z.png" height="80px"></center><br><br>
 </div>
 
 
 
 
-  <div style="margin:0px 8% ;padding:4% 4%;background-color: rgba(0, 0, 0, 0.1);">
-      
+<div style="margin:0px 8% ;padding:4% 4%;background-color: rgba(0, 0, 0, 0.1);">
 
-  <div style="margin:0px 4% ">
-<form action="">
-    <div class="mb-3 mt-3">
-    <label for="email" class="form-label">管理员邮箱</label>
-    <input type="email" class="form-control" id="email" placeholder="" name="email">
+
+    <div style="margin:0px 4% ">
+        <form action="">
+            <div class="mb-3 mt-3">
+                <label for="email" class="form-label">账号</label>
+                <input type="email" class="form-control" id="email" placeholder="" name="email">
+            </div>
+            <div class="mb-3">
+                <label for="pwd" class="form-label">密码</label>
+                <input type="password" class="form-control" id="pwd" placeholder="" name="pswd">
+            </div>
+            <div class="form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="remember"> 下一次登录之前记住我
+                </label>
+            </div>
+            <button type="submit" class="btn ">登录</button>
+        </form>
+
+
     </div>
-    <div class="mb-3">
-    <label for="pwd" class="form-label">密码</label>
-    <input type="password" class="form-control" id="pwd" placeholder="" name="pswd">
-    </div>
-    <div class="form-check mb-3">
-    <label class="form-check-label">
-      <input class="form-check-input" type="checkbox" name="remember"> 保持登录状态
-    </label>
-    </div>
-    <button type="submit" class="btn ">登录</button>
-  </form>
-
-
-  </div>
 
 
 
-  </div>
+</div>
 </div>
 
 
-    </div> 
+</div>
 </div>
 
 </div>
@@ -164,10 +156,10 @@ biaoz{background-color:red;border-radius:4px;padding:3px;color:white;}
 <div class="p-2" style="background-color:rgba(0, 0, 0, 0);">
 
     <p style="color:black;text-align:center;font-size: 14px;padding-top:10px;">
-      Powered by <a href="#" class="text-success">HongRuCMS</a> v3.35<br>技术支持：鸿儒智慧
-        </p> 
-   
-    </div>
+        Powered by <a href="#" class="text-success">天圣cms github资源管理系统</a> v3.35<br>防城港天圣软件有限公司
+    </p>
+
+</div>
 
 
 </body>
