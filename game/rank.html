@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>排行榜</title>
+    <title>新版排行榜</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
     <style type="text/css">
-    body{background-color:black;color:white;}
+    body{background-image: url('https://1.s140i.faiscm.com/2/AIwBCAAQAhgAIPWZ2e0FKPD-y7AGMNAFOIAK.jpg');background-attachment: fixed;color:white;}
 
     *::selection {
     background-color: white;
@@ -39,26 +39,26 @@ mc{color:yellow;}
 }
 #customers td
 {
-border:15px solid black;
+
     font-size:16px;
   text-align:left;
-  padding-top:5px;
-  padding-bottom:4px;
+  padding-top:15px;
+  padding-bottom:15px;
   padding-left:5px;
 
-  background-color:black;
+  background-color:darkred;
 
 
 }
 #customers th
 {
-  border:15px solid yellow;
+
     font-size:18px;
   text-align:left;
-  padding-top:5px;
-  padding-bottom:4px;
+  padding-top:20px;
+  padding-bottom:20px;
   padding-left:5px;
-  background-color:yellow;
+
   color:black;
 }
 
@@ -66,9 +66,17 @@ border:15px solid black;
 
   </style>
 </head>
-<body style="background-color:black;">
+<body>
 
-<div class="container" style="background-color:black;">
+
+<div class="alert alert-warning alert-dismissible">
+    
+    <als style="font-size:14px;"><strong>系统公告</strong> 游戏排行榜于2023年6月9日0:00清空了自2023年6月5日以前的全部数据，欢迎您重新挑战。</als>
+  </div>
+
+
+
+<div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 ">
         <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
 
@@ -78,7 +86,7 @@ border:15px solid black;
         <div class="card-header">
 
 
-            <p>上次更新时间：2023-06-08 02:02:02</p>
+            <p>Last updated on 2023/06/09 00:00:00</p>
 
 
 
@@ -88,213 +96,56 @@ border:15px solid black;
 </div>
 
 
-<div class="container mt-3">
+<div class="container">
 
     <div class="card-body">
 
 
         <table id="customers">
             <tr>
-                <th>名次</th>
-                <th>用户名</th>
-                <th>地区</th>
-                <th>分数</th>
-            </tr>
-            <tr>
-                <td><mc><img src="https://s2.loli.net/2023/06/07/UTmIHDuKC6GlbEP.png" width="30px"></mc></td>
-                <td>李文</td>
-                <td><gt>长春</gt></td>
-                <td><redt>207</redt></td>
+                
+                <th class="alert-warning">用户名</th>
+                <th class="alert-warning">地区</th>
+                <th class="alert-warning">分数</th>
             </tr>
 
             <tr>
-                <td><mc><img src="https://s2.loli.net/2023/06/07/UTmIHDuKC6GlbEP.png" width="30px"></mc></td>
-                <td>我王宏翔最帅</td>
-                <td><gt>津南区</gt></td>
+                
+                <td><img src="https://s2.loli.net/2023/06/09/auJYNML1yKXdVWR.png" width="30px"> 我王宏翔最帅</td>
+                <td><gt>天津津南</gt></td>
                 <td><redt>199</redt></td>
             </tr>
 
+
             <tr>
-                <td><mc>02</mc></td>
-                <td>2222</td>
-                <td><gt>长春</gt></td>
-                <td><redt>192</redt></td>
+                
+                <td>Szy</td>
+                <td><gt>长春南关</gt></td>
+                <td><redt>188</redt></td>
             </tr>
-            <tr>
-                <td><mc>02</mc></td>
-                <td>HX W</td>
-                <td><gt>长春</gt></td>
-                <td><redt>192</redt></td>
-            </tr>
-            <tr>
-                <td><mc>04</mc></td>
-                <td>刘济是**</td>
-                <td><gt>长春</gt></td>
-                <td><redt>191</redt></td>
-            </tr>
-            <tr>
-                <td><mc>05</mc></td>
-                <td>凹一点是一</td>
-                <td><gt>长春</gt></td>
-                <td><redt>183</redt></td>
-            </tr>
-            <tr>
-                <td><mc>06</mc></td>
-                <td>我叫李玉峰</td>
-                <td><gt>长春</gt></td>
-                <td><redt>180</redt></td>
-            </tr>
-            <tr>
-                <td><mc>06</mc></td>
-                <td>凹不动了</td>
-                <td><gt>长春</gt></td>
-                <td><redt>180</redt></td>
-            </tr>
-            <tr>
-                <td><mc>08</mc></td>
-                <td>bbbdy</td>
-                <td><gt>长春</gt></td>
-                <td><redt>179</redt></td>
-            </tr>
-            <tr>
-                <td><mc>08</mc></td>
-                <td>yyds</td>
-                <td><gt>长春</gt></td>
-                <td><redt>179</redt></td>
-            </tr>
-            <tr>
-                <td><mc>10</mc></td>
-                <td>宋东梅</td>
-                <td><gt>长春</gt></td>
-                <td><redt>176</redt></td>
-            </tr>
-            <tr>
-                <td><mc>11</mc></td>
-                <td>中圣</td>
-                <td><gt>长春</gt></td>
-                <td><redt>174</redt></td>
-            </tr>
-            <tr>
-                <td><mc>11</mc></td>
-                <td>我叫李玉峰</td>
-                <td><gt>长春</gt></td>
-                <td><redt>174</redt></td>
-            </tr>
-            <tr>
-                <td><mc>11</mc></td>
-                <td>G</td>
-                <td><gt>长春</gt></td>
-                <td><redt>174</redt></td>
-            </tr>
-            <tr>
-                <td><mc>14</mc></td>
-                <td>CPY</td>
-                <td><gt>长春</gt></td>
-                <td><redt>173</redt></td>
-            </tr>
-            <tr>
-                <td><mc>15</mc></td>
-                <td>郭雨奇</td>
-                <td><gt>长春</gt></td>
-                <td><redt>172</redt></td>
-            </tr>
-            <tr>
-                <td><mc>16</mc></td>
-                <td>活整好</td>
-                <td><gt>长春</gt></td>
-                <td><redt>171</redt></td>
-            </tr>
-            <tr>
-                <td><mc>17</mc></td>
-                <td>cz</td>
-                <td><gt>长春</gt></td>
-                <td><redt>169</redt></td>
-            </tr>
-            <tr>
-                <td><mc>17</mc></td>
-                <td>User</td>
-                <td><gt>长春</gt></td>
-                <td><redt>169</redt></td>
-            </tr>
-            <tr>
-                <td><mc>19</mc></td>
-                <td>不玩了md</td>
-                <td><gt>长春</gt></td>
-                <td><redt>167</redt></td>
-            </tr>
-            <tr>
-                <td><mc>20</mc></td>
-                <td>2323yyu</td>
-                <td><gt>长春</gt></td>
-                <td><redt>166</redt></td>
-            </tr>
-            <tr>
-                <td><mc>21</mc></td>
-                <td>cc</td>
-                <td><gt>长春</gt></td>
-                <td><redt>163</redt></td>
-            </tr>
-            <tr>
-                <td><mc>22</mc></td>
-                <td>文化挚爱</td>
-                <td><gt>长春</gt></td>
-                <td><redt>162</redt></td>
-            </tr>
-            <tr>
-                <td><mc>23</mc></td>
-                <td>杨树</td>
-                <td><gt>长春</gt></td>
-                <td><redt>161</redt></td>
-            </tr>
-            <tr>
-                <td><mc>24</mc></td>
-                <td>ssksb</td>
-                <td><gt>长春</gt></td>
-                <td><redt>159</redt></td>
-            </tr>
-            <tr>
-                <td><mc>25</mc></td>
-                <td>se</td>
-                <td><gt>长春</gt></td>
+             <tr>
+                
+                <td>洪宇凡</td>
+                <td><gt>成都成华</gt></td>
                 <td><redt>158</redt></td>
             </tr>
-            <tr>
-                <td><mc>26</mc></td>
-                <td>lys</td>
-                <td><gt>长春</gt></td>
-                <td><redt>156</redt></td>
-            </tr>
-            <tr>
-                <td><mc>27</mc></td>
-                <td>Stephorris</td>
-                <td><gt>海淀区</gt></td>
-                <td><redt>155</redt></td>
-            </tr>
-
-            <tr>
-                <td><mc>27</mc></td>
+                        <tr>
+                
                 <td>压垮稻草的最</td>
-                <td><gt>四平</gt></td>
+                <td><gt>长春朝阳</gt></td>
                 <td><redt>155</redt></td>
             </tr>
-
-            <tr>
-                <td><mc>28</mc></td>
-                <td>爱文化的倪</td>
-                <td><gt>长春</gt></td>
-                <td><redt>153</redt></td>
+                        <tr>
+                
+                <td>Stephorris</td>
+                <td><gt>北京海淀</gt></td>
+                <td><redt>155</redt></td>
             </tr>
             <tr>
-                <td><mc>28</mc></td>
-                <td>CCY</td>
-                <td><gt>长春</gt></td>
-                <td><redt>153</redt></td>
-            </tr>
-            <tr>
-                <td><mc>30</mc></td>
-                <td>大白</td>
-                <td><gt>长春</gt></td>
-                <td><redt>150</redt></td>
+                
+                <td>西交cpy</td>
+                <td><gt>西安榆林</gt></td>
+                <td><redt>154</redt></td>
             </tr>
 
 
@@ -306,11 +157,11 @@ border:15px solid black;
     <div class="container mt-3">
 
         <div class="d-grid" style="border-radius:0">
-            <a href="https://www.wjx.cn/vm/OtcA0Nn.aspx" type="button"  class="btn btn-lg btn-success btn-block">上传我的排名</a>
+            <a href="https://www.wjx.cn/vm/OtcA0Nn.aspx" type="button"  class="btn btn-lg alert-warning btn-block">上传我的排名</a>
             <br>
 
             <div class="d-grid" style="border-radius:0">
-                <a href="/game/" type="button"  class="btn btn-lg btn-success btn-block">返回游戏</a>
+                <a href="/game/" type="button"  class="btn btn-lg alert-warning btn-block">返回游戏</a>
             </div>
             <br><br>
         </div></div>
