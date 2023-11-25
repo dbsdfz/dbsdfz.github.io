@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>加油，附中人 | Home</title>
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <style>
+        .countdown {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<nav class="navbar navbar-expand-md bg-light navbar-light">
+    <a class="navbar-brand text-danger">加油，附中人</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">首页</a>
+      </li>
+      <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        功能
+      </a>
+      <div class="dropdown-menu alert alert-warning">
+
+    试运营中，功能暂未开放！
+
+
+      </div>
+    </li>
+    </ul>
+  </div>  
+</nav>
+
+
+
+
+
+
+
+<br><br>
+    <p style="text-align:center;"><img src="https://5b0988e595225.cdn.sohucs.com/images/20190917/516621b372a746688c450d5f305ccc71.jpeg" width="200px;"></p>
+    <h3 style="text-align:center;">高中部</h3>
+    <div class="countdown"><h4 style="text-align: center;">距<o3 style="color: gold;">黄星</o3>高考还有<span id="huangxing_gaokao"></span>天</p></div>
+    <div class="countdown"><h4 style="text-align: center;">距<o3 style="color: red;">红星</o3>高考还有<span id="hongxing_gaokao"></span>天</p></div>
+    <div class="countdown"><h4 style="text-align: center;">距<o3 style="color: green;">绿星</o3>高考还有<span id="lvxing_gaokao"></span>天</p></div>
+        <h3 style="text-align:center;">初中部</h3>
+    <div class="countdown"><h4 style="text-align: center;">距<o3 style="color: green;">绿星</o3>中考还有<span id="lvxing_zhongkao"></span>天</p></div>
+    <div class="countdown"><h4 style="text-align: center;">距<o3 style="color: gold;">黄星</o3>中考还有<span id="huangxing_zhongkao"></span>天</p></div>
+    <div class="countdown"><h4 style="text-align: center;">距<o3 style="color: red;">红星</o3>中考还有<span id="hongxing_zhongkao"></span>天</p></div>
+
+
+
+
+        <br><br>
+      
+
+    <script>
+        var now = moment();
+        
+        // 黄星高考倒计时
+        document.getElementById("huangxing_gaokao").innerHTML = moment().diff(moment([2024, 5, 8]), 'days'); 
+
+        // 红星高考倒计时
+        document.getElementById("hongxing_gaokao").innerHTML = moment().diff(moment([2025, 5, 8]), 'days'); 
+
+        // 绿星高考倒计时
+        document.getElementById("lvxing_gaokao").innerHTML = moment().diff(moment([2026, 5, 8]), 'days'); 
+
+        // 绿星中考倒计时
+        document.getElementById("lvxing_zhongkao").innerHTML = moment().diff(moment([2024, 5, 28]), 'days'); 
+
+        // 黄星中考倒计时
+        document.getElementById("huangxing_zhongkao").innerHTML = moment().diff(moment([2025, 5, 28]), 'days'); 
+
+        // 红星中考倒计时
+        document.getElementById("hongxing_zhongkao").innerHTML = moment().diff(moment([2026, 5, 28]), 'days'); 
+    </script>
+</body>
+</html>
