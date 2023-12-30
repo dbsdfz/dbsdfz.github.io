@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+  <!-- 新 Bootstrap4 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+ 
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+ 
+<!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+ 
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+
+    body {font-family:微软雅黑, Arial, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;;}
+    /*定义滚动条高宽及背景
+
+ 高宽分别对应横竖滚动条的尺寸*/
+ .gaikwo {background-color: #F0F0F0  ;color:#272727;padding:30px;line-height:180%;font-family: 楷体;font-size:17px;}
+
+::-webkit-scrollbar
+
+{
+
+    width:5px;
+
+    height:5px;
+
+    background-color:#F5F5F5;
+
+}
+
+/*定义滚动条轨道
+
+ 内阴影+圆角*/
+::-webkit-scrollbar-track
+
+{
+
+
+    background-color:#F5F5F5;
+ 
+
+}
+
+/*定义滑块
+
+ 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb
+
+{
+
+
+
+
+    background-color:#555;
+
+}
+    
+ *::selection {
+    background-color:#D2E9FF ;
+}
+ 
+*::-moz-selection {
+    background-color:#D2E9FF  ;
+}
+ 
+*::-webkit-selection {
+    background-color:#D2E9FF ;
+}
+
+.x{padding:4px 10px;color:white;background-color:royalblue;font-size:16px;text-decoration:none;border-radius:4px;}
+.x:hover{;color:white;background-color:royalblue;text-decoration:none;}
+
+.btn:active {box-shadow:none;}
+.btn:focus {box-shadow:none;}
+.btn-info {border-radius:0;outline:none;border:none;}
+.btn-info:hover{background-color:black ;}
+
+
+.dropdown-menu {border-radius:0;border:none;padding:0;box-shadow:none;outline:none;background-color:rgba(0, 0, 0, 0);box-shadow: none;}
+.dropdown-item{padding: 9px 10px;background-color:rgba(178, 0, 0, 0.9);color:white;font-size:14px;transition:0.1s;border:none;}
+.dropdown-item:hover{color:white;background-color: #8e1e20 ;transition:0.2s;}
+
+.list-group-item {border:none;border-radius:10px;color:rgb(133, 0, 0);padding-left: 0;padding-right: 0;font-size:14px;border-radius: 0}
+.card {border-radius:0;border:none;}
+.list-group-item-action:hover{color:rgb(0, 100, 0);;background-color:#F0F0F0    ;}
+.list-group-item-action:focus{background-color:white;}
+.list-group-item-action:active{background-color:white;}
+
+biaoq{font-size:12px;}
+biaos{font-size:16px; color:grey;text-decoration:bold;}
+biaoz{background-color:red;border-radius:4px;padding:3px;color:white;}
+
+.xuanzhong {color: darkred
+;border-radius:20px;}
+p{font-size: 15px;}
+a {color:darkred;}
+
+p.dibusa{color:black;text-align:center;font-size: 12px;padding-top:10px;}
+
+
+.btnput{border-radius: 0;background-color:darkred;border: none;color:white;}
+
+p.zw{color:#5B5B5B ;line-height:210% }
+
+
+.nav-link-cd {color:rgb(158, 0, 0);text-decoration: none;line-height:200%;transition: none;}
+.nav-link-cd:hover {background-color:#FFB5B5  ;color: darkred;transition: none;}
+.nav-link-xz {color:rgb(158, 0, 0);text-decoration: none;line-height:200%;background-color:lightgrey;}
+.nav-link-top {color: white;line-height: 300%;font-size: 22px;}
+
+  </style>
+
+</head>
+<body style="background-color:#f0f0f0">
+
+
+<div style="background-color:white;box-shadow:3px 3px 6px lightgrey;">
+ <div class="container" >
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-0">
+      <a class="d-flex align-items-center  mb-md-0 me-md-auto text-dark text-decoration-none">
+       <ul class="nav nav-pills">
+        <img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAgj9i6rAYonK3uVTCaAziMAg.png" height="65px"></ul>
+      </a>
+
+    </header>
+  </div>  
+  </div>
+
+
+<! 2>
+
+  <div style="background-color:white;box-shadow:3px 3px 6px lightgrey;">
+ <div class="container" >
+    <header class="d-flex flex-wrap justify-content-center py-1 mb-0">
+ 
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html"  class="btn"  > 首页 </a></li>
+
+
+         <li class="nav-item"><a href="#"  class="btn " data-bs-toggle="dropdown"> 关于惊时 </a>
+ <div class="dropdown-menu" >
+    
+   <a href="bkjs.html" class="dropdown-item" target="_blank">本刊介绍</a>
+   <a href="zbzc.html" class="dropdown-item" target="_blank">主编致辞</a>
+   <a href="0bwh.html" class="dropdown-item" target="_blank">编 委 会</a>
+    
+
+  </div>
+         </li>
+          
+
+  
+        <li class="nav-item"><a href="#" class="btn xuanzhong" data-toggle="modal" data-target="#dingyue1"> 在线订阅 </a>
+
+<!-- 模态框 -->
+<div class="modal fade" id="dingyue1">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content" style="border-radius:0;border: none;">
+ 
+      <!-- 模态框头部 -->
+<img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAg3Pa6rAYo1LmiyAcwyAQ4mAM.png" width="100%">
+      <!-- 模态框主体 -->
+      <div class="alert" style="font-weight: bold;font-size:18px;">
+
+      </div>
+ 
+      <!-- 模态框底部 -->
+    
+        <a class="alert-danger dropdown-item text-light" data-dismiss="modal" style="text-align: center;font-size: 16px;">关闭
+      </a>
+ 
+    </div>
+  </div>
+</div>
+
+
+        </li>
+
+     
+ 
+
+         <li class="nav-item"><a href="#"  class="btn   " data-bs-toggle="dropdown"> 友情链接 </a>
+ <div class="dropdown-menu" >
+    
+   <a href="https://www.msannu.cn/" class="dropdown-item" target="_blank">东北师范大学附属中学</a>
+   <a href="/" class="dropdown-item" target="_blank">dbsdfz Cloud 官网</a>
+   
+    
+
+  </div>
+         </li>
+          
+
+      
+
+      </ul>
+    </header>
+  </div>  
+  </div>
+
+
+
+
+
+
+
+  <div class="container" style="margin-top:30px;background-color:white;">
+  <div class="row">
+    <div class="col-sm-3">
+      
+      <ul class="nav nav-pills flex-column" ><br>
+        <div style="border:0px solid rgb(178, 0, 0);">
+        <li class="nav-item">
+          <a class="nav-link nav-link-top" style="background-color: rgb(178, 0, 0);border-radius: 0;color:white">在线阅读</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-cd" style="border-radius: 0;" href="/jingshi/">返回首页</a>
+        </li>
+      </div>
+        <br><br>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8"><br>
+      <br><h3><b>晨熹如洪，一骑逸凡 </b></h3>
+      <p>作者：赵禹淳 | 2019年10月</p>
+      <hr>
+      
+      <div class="gaikwo">在此说明，二位均为男性，也无意冒犯。我仅是以一个旁观者的角度来记录点点滴滴的......<br>
+提及这二位的“爱恨纠缠”，便有说上整整一天都不够。下面先了解一下这两个人的基本信息吧。<br>
+洪宇凡，身型中等，不高不矮，不胖不瘦，大眼睛双眼皮，来自福建，看起来就一副“秀色可餐”的样子，并且性情温柔好相处，擅长卖萌等手段。<br>
+宫逸晨，身型与他的“另一半”接近。脾气同样温和，来自山东。而谁能想到这一南一北，看似不搭边的两个人在看似平凡的彼此的生活中，能建立起最深的羁绊。<br>
+令人最印象深刻的便是那次牵手。他们时常会“暧昧”，当着大家的面拉拉扯扯，但是大庭广众，在陈sir的注视下，潇洒地牵起手，我想也就他们两人能够做到了。牵着手，又不仅仅是牵手，目光相对，眉眼相交，只留下一阵甜甜的空气，仿佛西欧中世纪坠入爱河的情侣。<br>
+倘若要寻找二人关系如此亲密的原因，亲和温柔的性格，两人之间冥冥之间的吸引，让他们越走越近，在人生地不熟的新集体中找到了心灵依靠的彼岸。  <br>
+以下是我的观察记录：</div><br>
+<p class="zw" style="text-align:center;font-weight: bold;">“情比金坚”</p>
+<p class="zw">虽然他们已经许久没有同桌了，但还是经常谈天说地，好似这段情缘从未断绝，他们也从未分开。他们还是会傻笑，还是会你追我赶，好像认识了许多年的知己一般，总有说不完的话题。大到国家时政，科技要闻，小到某人绯闻，生活糗事。无论有多无聊，他们都会讲的眉飞色舞，然后捧腹大笑，直到缺氧为止，做彼此的欢乐，只为看见你的笑容。</p>
+<p class="zw" style="text-align:center;font-weight: bold;">“患难与共”</p>
+<p class="zw">对于从来不太擅长认真做事的两个马马虎虎的人来说，老师突然降临的演讲任务让他们头昏眼花。可是怎么可以一个人独自享受这种曼妙的感觉，那必定要传递给自己的好知己。所谓爱情，就是推荐对方参与一切不擅长或者不愿意的事情。于是久而久之，礼尚往来，每当有什么大型活动，都会在一个人的口中，听见另一个人的名字。就像班里总有类似这样的对话:<br><br>
+“谁想要报名数学竞赛？”<br><br>
+不等话完全说完，就会听见两个人争先恐后地喊：“宫逸晨！”，“洪宇凡！”“不不不，您比我厉害，还是你来吧。”</p>
+<p class="zw" style="text-align:center;font-weight: bold;">“相爱相杀”</p>
+<p class="zw">校园中，如影随形，如胶似漆的两人，有时也会因为一些无聊透顶的小事情而绊嘴。例如：“你拿我格尺了。”或者是“还我卷子。”情况愈演愈烈，变成了小矛盾，不过好在他们两个人的感情一直保持在线状态，纠纷很快就不攻自破了。<br><br>
+他们的关系呢，亲昵但不过分，不会影响到其他同学，我想这也是这段“爱情”历久弥坚的原因了罢。<br><br>
+高中生活还有三年的路要走，这两个人之间的情缘将要漫步花路与否，还是个谜……<br><br>
+
+</p>
+<hr><p style="text-align:right;">纸稿编辑：刘可心</p>
+<br><br>
+
+</div></div></div>
+
+
+<br>
+
+<div class="p-2" style="background-color:white;">
+
+    <p class="dibusa">
+      © 2019-2021  《惊时》电子刊官方网站  All Right Reserved. <br><a href="#">电ICP备11000000号</a>
+        </p>  
+        </p> 
+        
+   
+    </div>
+
+
+</body>
+</html>

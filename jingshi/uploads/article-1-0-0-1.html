@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+  <!-- 新 Bootstrap4 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+ 
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+ 
+<!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+ 
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+
+    body {font-family:微软雅黑, Arial, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;;}
+    /*定义滚动条高宽及背景
+
+ 高宽分别对应横竖滚动条的尺寸*/
+
+::-webkit-scrollbar
+
+{
+
+    width:5px;
+
+    height:5px;
+
+    background-color:#F5F5F5;
+
+}
+
+/*定义滚动条轨道
+
+ 内阴影+圆角*/
+::-webkit-scrollbar-track
+
+{
+
+
+    background-color:#F5F5F5;
+ 
+
+}
+
+/*定义滑块
+
+ 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb
+
+{
+
+
+
+
+    background-color:#555;
+
+}
+    
+ *::selection {
+    background-color:#D2E9FF ;
+}
+ 
+*::-moz-selection {
+    background-color:#D2E9FF  ;
+}
+ 
+*::-webkit-selection {
+    background-color:#D2E9FF ;
+}
+
+.x{padding:4px 10px;color:white;background-color:royalblue;font-size:16px;text-decoration:none;border-radius:4px;}
+.x:hover{;color:white;background-color:royalblue;text-decoration:none;}
+
+.btn:active {box-shadow:none;}
+.btn:focus {box-shadow:none;}
+.btn-info {border-radius:0;outline:none;border:none;}
+.btn-info:hover{background-color:black ;}
+
+
+.dropdown-menu {border-radius:0;border:none;padding:0;box-shadow:none;outline:none;background-color:rgba(0, 0, 0, 0);box-shadow: none;}
+.dropdown-item{padding: 9px 10px;background-color:rgba(178, 0, 0, 0.9);color:white;font-size:14px;transition:0.1s;border:none;}
+.dropdown-item:hover{color:white;background-color: #8e1e20 ;transition:0.2s;}
+
+.list-group-item {border:none;border-radius:10px;color:rgb(133, 0, 0);padding-left: 0;padding-right: 0;font-size:14px;border-radius: 0}
+.card {border-radius:0;border:none;}
+.list-group-item-action:hover{color:rgb(0, 100, 0);;background-color:#F0F0F0    ;}
+.list-group-item-action:focus{background-color:white;}
+.list-group-item-action:active{background-color:white;}
+
+biaoq{font-size:12px;}
+biaos{font-size:16px; color:grey;text-decoration:bold;}
+biaoz{background-color:red;border-radius:4px;padding:3px;color:white;}
+
+.xuanzhong {color: darkred
+;border-radius:20px;}
+p{font-size: 15px;}
+a {color:darkred;}
+
+p.dibusa{color:black;text-align:center;font-size: 12px;padding-top:10px;}
+
+
+.btnput{border-radius: 0;background-color:darkred;border: none;color:white;}
+
+p.zw{color:#5B5B5B ;line-height:210% }
+
+
+.nav-link-cd {color:rgb(158, 0, 0);text-decoration: none;line-height:200%;transition: none;}
+.nav-link-cd:hover {background-color:#FFB5B5  ;color: darkred;transition: none;}
+.nav-link-xz {color:rgb(158, 0, 0);text-decoration: none;line-height:200%;background-color:lightgrey;}
+.nav-link-top {color: white;line-height: 300%;font-size: 22px;}
+
+  </style>
+
+</head>
+<body style="background-color:#f0f0f0">
+
+
+<div style="background-color:white;box-shadow:3px 3px 6px lightgrey;">
+ <div class="container" >
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-0">
+      <a class="d-flex align-items-center  mb-md-0 me-md-auto text-dark text-decoration-none">
+       <ul class="nav nav-pills">
+        <img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAgj9i6rAYonK3uVTCaAziMAg.png" height="65px"></ul>
+      </a>
+
+    </header>
+  </div>  
+  </div>
+
+
+<! 2>
+
+  <div style="background-color:white;box-shadow:3px 3px 6px lightgrey;">
+ <div class="container" >
+    <header class="d-flex flex-wrap justify-content-center py-1 mb-0">
+ 
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html"  class="btn"  > 首页 </a></li>
+
+
+         <li class="nav-item"><a href="#"  class="btn " data-bs-toggle="dropdown"> 关于惊时 </a>
+ <div class="dropdown-menu" >
+    
+   <a href="bkjs.html" class="dropdown-item" target="_blank">本刊介绍</a>
+   <a href="zbzc.html" class="dropdown-item" target="_blank">主编致辞</a>
+   <a href="0bwh.html" class="dropdown-item" target="_blank">编 委 会</a>
+    
+
+  </div>
+         </li>
+          
+
+  
+        <li class="nav-item"><a href="#" class="btn xuanzhong" data-toggle="modal" data-target="#dingyue1"> 在线订阅 </a>
+
+<!-- 模态框 -->
+<div class="modal fade" id="dingyue1">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content" style="border-radius:0;border: none;">
+ 
+      <!-- 模态框头部 -->
+<img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAg3Pa6rAYo1LmiyAcwyAQ4mAM.png" width="100%">
+      <!-- 模态框主体 -->
+      <div class="alert" style="font-weight: bold;font-size:18px;">
+
+      </div>
+ 
+      <!-- 模态框底部 -->
+    
+        <a class="alert-danger dropdown-item text-light" data-dismiss="modal" style="text-align: center;font-size: 16px;">关闭
+      </a>
+ 
+    </div>
+  </div>
+</div>
+
+
+        </li>
+
+     
+ 
+
+         <li class="nav-item"><a href="#"  class="btn   " data-bs-toggle="dropdown"> 友情链接 </a>
+ <div class="dropdown-menu" >
+    
+   <a href="https://www.msannu.cn/" class="dropdown-item" target="_blank">东北师范大学附属中学</a>
+   <a href="/" class="dropdown-item" target="_blank">dbsdfz Cloud 官网</a>
+   
+    
+
+  </div>
+         </li>
+          
+
+      
+
+      </ul>
+    </header>
+  </div>  
+  </div>
+
+
+
+
+
+
+
+  <div class="container" style="margin-top:30px;background-color:white;">
+  <div class="row">
+    <div class="col-sm-3">
+      
+      <ul class="nav nav-pills flex-column" ><br>
+        <div style="border:0px solid rgb(178, 0, 0);">
+        <li class="nav-item">
+          <a class="nav-link nav-link-top" style="background-color: rgb(178, 0, 0);border-radius: 0;color:white">在线阅读</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-cd" style="border-radius: 0;" href="/jingshi/">返回首页</a>
+        </li>
+      </div>
+        <br><br>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8"><br>
+      <br><h3><b>英雄联盟是一种信仰</b></h3>
+      <p>作者：崔锦棠 | 2019年10月</p>
+      <hr>
+      
+      <p class="zw">关于游戏，有的人认为它是一种休闲娱乐方式，有的人会说它是一种毒品，染上则会上瘾。然而英雄联盟不一样，它是一群人的信仰，它填满了我们的青春。<br><br>
+这是一款由美国Riot Games创造的一款游戏，游戏中分为两个阵营，每个阵营有五个队员，分上中下三路对决，最终以推倒对方的家园水晶为胜利。简单的游戏规则背后，却是暗藏玄机。战略，分析，反应，全局观……这游戏中的变化莫测正是最吸引人的。有时虽前半段以压倒性的优势碾压对方，但可能后面的一波团战就会将前功尽弃。这样的貌似无常变化，才让我无数次为之着迷。<br><br>
+英雄联盟不仅仅是一个推塔游戏，每一个英雄的人物故事，每一句话语，甚至每一个人物背后国家的故事都震撼人心。<br><br>
+曾记得第一次接触英雄联盟的青涩，小学四年级的我还非常的懵懂，受一群同学邀请，我来到了英雄联盟，来到这片召唤师峡谷。曾记得第一次听到盖伦的声音高呼“德玛西亚万岁！”那个幽默的声音不由得让我笑出了声。但当我逐渐了解到盖伦属于的德玛西亚，那古老而高贵的冕卫家族。他一生毫无保留地守卫着德玛西亚王国的疆土，守卫家族的荣耀，为了国家的安危，哪怕再危险、再残酷的战斗，他都会身先士卒，挺身而出。他身披抵御魔法的重甲，手持阔剑，时刻准备着用正义的钢铁风暴在战场上正面迎战一切操纵魔法的狂人时，我内心不由得为之一震，他们也有自己的故事么？<br><br>
+我想起发条魔灵。她叫奥莉安娜，她也曾是一个活蹦乱跳的小女孩。而现在，她全身上下除了心脏，都是铜干铁皮。在一次祖安的爆炸事故中，泄漏的毒气污染让大地枯草不生，使人间犹如炼狱。听说这件事情的奥莉安娜却执意前往祖安帮助人们，她甚至将自己的防毒面具给予一个小男孩，而引得自己被感染，器官一个个损坏。她的父亲不惜倾家荡产，付出了一切代价，终于保住了奥莉安娜的性命。但最后她的父亲因毒气而死，而她却以一个机器人的身份活了下来。<br><br>
+这样一个个感人的故事在游戏背后，让人为之动容，受之吸引。<br><br>
+听着主机箱散热片的轰鸣声和键盘清脆而有节奏的声响，我再次回到了英雄联盟中，熟悉的客户端，熟悉的游戏画面，可是那些熟悉的人却已经不在身旁了。再也听不到团队之间的交流，因为失误而给对方安慰。一局游戏结束，我发现我缺少的并不是时间，而是那群陪我一起战斗的小伙伴。因为成长，我们失去了最初的本心。因为成熟，我们褪掉了当初的稚嫩。因为时间，我们渐行渐远。希望有朝一日我们还能重逢，在那召唤师峡谷中挥洒自己汗水。希望人生只如初见……<br><br>
+    英雄联盟不只是一款游戏，它陪伴了太多人的青春，承载了太多人的信仰。即便与英雄联盟见面的机会越来越少，但我相信，只要心中还有信仰，联盟永不磨灭！<br><br>
+</p>
+<hr><p style="text-align:right;">纸稿编辑：刘可心</p>
+<br><br>
+
+</div></div></div>
+
+
+<br>
+
+<div class="p-2" style="background-color:white;">
+
+    <p class="dibusa">
+      © 2019-2021  《惊时》电子刊官方网站  All Right Reserved. <br><a href="#">电ICP备11000000号</a>
+        </p>  
+        </p> 
+        
+   
+    </div>
+
+
+</body>
+</html>

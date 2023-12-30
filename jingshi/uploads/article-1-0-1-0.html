@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+  <!-- 新 Bootstrap4 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+ 
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+ 
+<!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+ 
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+
+    body {font-family:微软雅黑, Arial, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;;}
+    /*定义滚动条高宽及背景
+
+ 高宽分别对应横竖滚动条的尺寸*/
+
+ .gaikwo {background-color: #F0F0F0  ;color:#272727;padding:30px;line-height:180%;font-family: 楷体;font-size:17px;}
+
+::-webkit-scrollbar
+
+{
+
+    width:5px;
+
+    height:5px;
+
+    background-color:#F5F5F5;
+
+}
+
+/*定义滚动条轨道
+
+ 内阴影+圆角*/
+::-webkit-scrollbar-track
+
+{
+
+
+    background-color:#F5F5F5;
+ 
+
+}
+
+/*定义滑块
+
+ 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb
+
+{
+
+
+
+
+    background-color:#555;
+
+}
+    
+ *::selection {
+    background-color:#D2E9FF ;
+}
+ 
+*::-moz-selection {
+    background-color:#D2E9FF  ;
+}
+ 
+*::-webkit-selection {
+    background-color:#D2E9FF ;
+}
+
+.x{padding:4px 10px;color:white;background-color:royalblue;font-size:16px;text-decoration:none;border-radius:4px;}
+.x:hover{;color:white;background-color:royalblue;text-decoration:none;}
+
+.btn:active {box-shadow:none;}
+.btn:focus {box-shadow:none;}
+.btn-info {border-radius:0;outline:none;border:none;}
+.btn-info:hover{background-color:black ;}
+
+
+.dropdown-menu {border-radius:0;border:none;padding:0;box-shadow:none;outline:none;background-color:rgba(0, 0, 0, 0);box-shadow: none;}
+.dropdown-item{padding: 9px 10px;background-color:rgba(178, 0, 0, 0.9);color:white;font-size:14px;transition:0.1s;border:none;}
+.dropdown-item:hover{color:white;background-color: #8e1e20 ;transition:0.2s;}
+
+.list-group-item {border:none;border-radius:10px;color:rgb(133, 0, 0);padding-left: 0;padding-right: 0;font-size:14px;border-radius: 0}
+.card {border-radius:0;border:none;}
+.list-group-item-action:hover{color:rgb(0, 100, 0);;background-color:#F0F0F0    ;}
+.list-group-item-action:focus{background-color:white;}
+.list-group-item-action:active{background-color:white;}
+
+biaoq{font-size:12px;}
+biaos{font-size:16px; color:grey;text-decoration:bold;}
+biaoz{background-color:red;border-radius:4px;padding:3px;color:white;}
+
+.xuanzhong {color: darkred
+;border-radius:20px;}
+p{font-size: 15px;}
+a {color:darkred;}
+
+p.dibusa{color:black;text-align:center;font-size: 12px;padding-top:10px;}
+
+
+.btnput{border-radius: 0;background-color:darkred;border: none;color:white;}
+
+p.zw{color:#5B5B5B ;line-height:200% }
+
+
+.nav-link-cd {color:rgb(158, 0, 0);text-decoration: none;line-height:200%;transition: none;}
+.nav-link-cd:hover {background-color:#FFB5B5  ;color: darkred;transition: none;}
+.nav-link-xz {color:rgb(158, 0, 0);text-decoration: none;line-height:200%;background-color:lightgrey;}
+.nav-link-top {color: white;line-height: 300%;font-size: 22px;}
+
+  </style>
+
+</head>
+<body style="background-color:#f0f0f0">
+
+
+<div style="background-color:white;box-shadow:3px 3px 6px lightgrey;">
+ <div class="container" >
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-0">
+      <a class="d-flex align-items-center  mb-md-0 me-md-auto text-dark text-decoration-none">
+       <ul class="nav nav-pills">
+        <img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAgj9i6rAYonK3uVTCaAziMAg.png" height="65px"></ul>
+      </a>
+
+    </header>
+  </div>  
+  </div>
+
+
+<! 2>
+
+  <div style="background-color:white;box-shadow:3px 3px 6px lightgrey;">
+ <div class="container" >
+    <header class="d-flex flex-wrap justify-content-center py-1 mb-0">
+ 
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html"  class="btn"  > 首页 </a></li>
+
+
+         <li class="nav-item"><a href="#"  class="btn " data-bs-toggle="dropdown"> 关于惊时 </a>
+ <div class="dropdown-menu" >
+    
+   <a href="bkjs.html" class="dropdown-item" target="_blank">本刊介绍</a>
+   <a href="zbzc.html" class="dropdown-item" target="_blank">主编致辞</a>
+   <a href="0bwh.html" class="dropdown-item" target="_blank">编 委 会</a>
+    
+
+  </div>
+         </li>
+          
+
+  
+        <li class="nav-item"><a href="#" class="btn xuanzhong" data-toggle="modal" data-target="#dingyue1"> 在线订阅 </a>
+
+<!-- 模态框 -->
+<div class="modal fade" id="dingyue1">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content" style="border-radius:0;border: none;">
+ 
+      <!-- 模态框头部 -->
+<img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAg3Pa6rAYo1LmiyAcwyAQ4mAM.png" width="100%">
+      <!-- 模态框主体 -->
+      <div class="alert" style="font-weight: bold;font-size:18px;">
+
+      </div>
+ 
+      <!-- 模态框底部 -->
+    
+        <a class="alert-danger dropdown-item text-light" data-dismiss="modal" style="text-align: center;font-size: 16px;">关闭
+      </a>
+ 
+    </div>
+  </div>
+</div>
+
+
+        </li>
+
+     
+ 
+
+         <li class="nav-item"><a href="#"  class="btn   " data-bs-toggle="dropdown"> 友情链接 </a>
+ <div class="dropdown-menu" >
+    
+   <a href="https://www.msannu.cn/" class="dropdown-item" target="_blank">东北师范大学附属中学</a>
+   <a href="/" class="dropdown-item" target="_blank">dbsdfz Cloud 官网</a>
+   
+    
+
+  </div>
+         </li>
+          
+
+      
+
+      </ul>
+    </header>
+  </div>  
+  </div>
+
+
+
+
+
+
+
+  <div class="container" style="margin-top:30px;background-color:white;">
+  <div class="row">
+    <div class="col-sm-3">
+      
+      <ul class="nav nav-pills flex-column" ><br>
+        <div style="border:0px solid rgb(178, 0, 0);">
+        <li class="nav-item">
+          <a class="nav-link nav-link-top" style="background-color: rgb(178, 0, 0);border-radius: 0;color:white">在线阅读</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-cd" style="border-radius: 0;" href="/jingshi/">返回首页</a>
+        </li>
+      </div>
+        <br><br>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8"><br>
+      <br><h3><b>关于我
+</b></h3>
+      <p>作者：陈 骁 | 2019年10月</p>
+      <hr>
+      
+<p class="zw">我本想说些与别人大同小异的话。但与其那样，为了以说自己为目的，那么那些就没必要说了。<br><br>
+我是由我吃过的东西，见过的人、事，听过的、说过的话，有过的想法感受组成的。而并非是由我的细胞，我的器官组成的。假如有一个克隆的我，仅仅身体上一模一样，那他真的是我吗？所以较好的了解一个人的方式是了解他真正的组成部分。<br><br>
+我现在能说些关于自己的真正的话了。我很少说这种东西。真正的话是能成为自己的话。比如爱因斯坦，人人皆知相对论，而谁又知道他在学会说话后说的第一句是“这汤太烫了”。现在我能说些关于自己的话了。<br><br>
+我习惯了压制自己，有时我想说些什么却做不出声，想挥拳却鼓不起气力。我像是被什么东西钝化了，形成一层隔膜阻碍着反应。究竟是它驯化了我，或者我就是它？我现在很少见到自己的第一反应。我感觉自己成了千层饼，但我还没忘了自己是什么馅的。我有时羡慕那些单层无馅的白馍，但它们也使我无语、无奈。<br><br>
+我寻找真正的人。我不确定什么是真正的人，但起码不是白馍。我有时一眼望不到真正的人。我看到了太多众多的人类，说着各种的声音。仔细辨认，说的都是一种东西。这种东西最大的好处就是通俗易懂。于是我感觉自己身处别的动物之中。动物的叫声千奇百怪，但意义上向来差别不大。但眼前的这种动物是用东西遮住了自己扭韧的皮，一样动着的肌肉，一样有铁锈味的血液。好像这样就能决别开并傲视其它动物一样。我有时实在难找到真正的人。<br><br>
+有人总会受到愤世嫉俗的诱惑，而这是不可取的，也是我不会去做的。<br><br>
+我还有很多话要说。我试着去把自己新鲜的解剖，但不幸撕成了碎片；我想过幽默风趣，可我没找到合适的颜色。我继续这样做的时候，有时会感觉身体中有絮状的东西往下沉，伸出的丝把内脏勒出了痕。这大概又是我在压制自己了。即使我还有很多要说的话，我也暂时只能说这些了。<br><br>
+原来我是除了除了我以外的所有人以外的所有人。<br>
+
+</p>
+
+
+
+
+
+<hr><p style="text-align:right;">纸稿编辑：</p>
+<br><br>
+
+</div></div></div>
+
+
+<br>
+
+<div class="p-2" style="background-color:white;">
+
+    <p class="dibusa">
+      © 2019-2021  《惊时》电子刊官方网站  All Right Reserved. <br><a href="#">电ICP备11000000号</a>
+        </p>  
+        </p> 
+        
+   
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+  <!-- 新 Bootstrap4 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+ 
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+ 
+<!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+ 
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+
+    body {font-family:微软雅黑, Arial, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;;}
+    /*定义滚动条高宽及背景
+
+ 高宽分别对应横竖滚动条的尺寸*/
+
+ .gaikwo {background-color: #F0F0F0  ;color:#272727;padding:30px;line-height:180%;font-family: 楷体;font-size:17px;}
+
+::-webkit-scrollbar
+
+{
+
+    width:5px;
+
+    height:5px;
+
+    background-color:#F5F5F5;
+
+}
+
+/*定义滚动条轨道
+
+ 内阴影+圆角*/
+::-webkit-scrollbar-track
+
+{
+
+
+    background-color:#F5F5F5;
+ 
+
+}
+
+/*定义滑块
+
+ 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb
+
+{
+
+
+
+
+    background-color:#555;
+
+}
+    
+ *::selection {
+    background-color:#D2E9FF ;
+}
+ 
+*::-moz-selection {
+    background-color:#D2E9FF  ;
+}
+ 
+*::-webkit-selection {
+    background-color:#D2E9FF ;
+}
+
+.x{padding:4px 10px;color:white;background-color:royalblue;font-size:16px;text-decoration:none;border-radius:4px;}
+.x:hover{;color:white;background-color:royalblue;text-decoration:none;}
+
+.btn:active {box-shadow:none;}
+.btn:focus {box-shadow:none;}
+.btn-info {border-radius:0;outline:none;border:none;}
+.btn-info:hover{background-color:black ;}
+
+
+.dropdown-menu {border-radius:0;border:none;padding:0;box-shadow:none;outline:none;background-color:rgba(0, 0, 0, 0);box-shadow: none;}
+.dropdown-item{padding: 9px 10px;background-color:rgba(178, 0, 0, 0.9);color:white;font-size:14px;transition:0.1s;border:none;}
+.dropdown-item:hover{color:white;background-color: #8e1e20 ;transition:0.2s;}
+
+.list-group-item {border:none;border-radius:10px;color:rgb(133, 0, 0);padding-left: 0;padding-right: 0;font-size:14px;border-radius: 0}
+.card {border-radius:0;border:none;}
+.list-group-item-action:hover{color:rgb(0, 100, 0);;background-color:#F0F0F0    ;}
+.list-group-item-action:focus{background-color:white;}
+.list-group-item-action:active{background-color:white;}
+
+biaoq{font-size:12px;}
+biaos{font-size:16px; color:grey;text-decoration:bold;}
+biaoz{background-color:red;border-radius:4px;padding:3px;color:white;}
+
+.xuanzhong {color: darkred
+;border-radius:20px;}
+p{font-size: 15px;}
+a {color:darkred;}
+
+p.dibusa{color:black;text-align:center;font-size: 12px;padding-top:10px;}
+
+
+.btnput{border-radius: 0;background-color:darkred;border: none;color:white;}
+
+p.zw{color:#5B5B5B ;line-height:200% }
+
+
+.nav-link-cd {color:rgb(158, 0, 0);text-decoration: none;line-height:200%;transition: none;}
+.nav-link-cd:hover {background-color:#FFB5B5  ;color: darkred;transition: none;}
+.nav-link-xz {color:rgb(158, 0, 0);text-decoration: none;line-height:200%;background-color:lightgrey;}
+.nav-link-top {color: white;line-height: 300%;font-size: 22px;}
+
+  </style>
+
+</head>
+<body style="background-color:#f0f0f0">
+
+
+<div style="background-color:white;box-shadow:3px 3px 6px lightgrey;">
+ <div class="container" >
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-0">
+      <a class="d-flex align-items-center  mb-md-0 me-md-auto text-dark text-decoration-none">
+       <ul class="nav nav-pills">
+        <img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAgj9i6rAYonK3uVTCaAziMAg.png" height="65px"></ul>
+      </a>
+
+    </header>
+  </div>  
+  </div>
+
+
+<! 2>
+
+  <div style="background-color:white;box-shadow:3px 3px 6px lightgrey;">
+ <div class="container" >
+    <header class="d-flex flex-wrap justify-content-center py-1 mb-0">
+ 
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="index.html"  class="btn"  > 首页 </a></li>
+
+
+         <li class="nav-item"><a href="#"  class="btn " data-bs-toggle="dropdown"> 关于惊时 </a>
+ <div class="dropdown-menu" >
+    
+   <a href="bkjs.html" class="dropdown-item" target="_blank">本刊介绍</a>
+   <a href="zbzc.html" class="dropdown-item" target="_blank">主编致辞</a>
+   <a href="0bwh.html" class="dropdown-item" target="_blank">编 委 会</a>
+    
+
+  </div>
+         </li>
+          
+
+  
+        <li class="nav-item"><a href="#" class="btn xuanzhong" data-toggle="modal" data-target="#dingyue1"> 在线订阅 </a>
+
+<!-- 模态框 -->
+<div class="modal fade" id="dingyue1">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content" style="border-radius:0;border: none;">
+ 
+      <!-- 模态框头部 -->
+<img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAg3Pa6rAYo1LmiyAcwyAQ4mAM.png" width="100%">
+      <!-- 模态框主体 -->
+      <div class="alert" style="font-weight: bold;font-size:18px;">
+
+      </div>
+ 
+      <!-- 模态框底部 -->
+    
+        <a class="alert-danger dropdown-item text-light" data-dismiss="modal" style="text-align: center;font-size: 16px;">关闭
+      </a>
+ 
+    </div>
+  </div>
+</div>
+
+
+        </li>
+
+     
+ 
+
+         <li class="nav-item"><a href="#"  class="btn   " data-bs-toggle="dropdown"> 友情链接 </a>
+ <div class="dropdown-menu" >
+    
+   <a href="https://www.msannu.cn/" class="dropdown-item" target="_blank">东北师范大学附属中学</a>
+   <a href="/" class="dropdown-item" target="_blank">dbsdfz Cloud 官网</a>
+   
+    
+
+  </div>
+         </li>
+          
+
+      
+
+      </ul>
+    </header>
+  </div>  
+  </div>
+
+
+
+
+
+
+
+  <div class="container" style="margin-top:30px;background-color:white;">
+  <div class="row">
+    <div class="col-sm-3">
+      
+      <ul class="nav nav-pills flex-column" ><br>
+        <div style="border:0px solid rgb(178, 0, 0);">
+        <li class="nav-item">
+          <a class="nav-link nav-link-top" style="background-color: rgb(178, 0, 0);border-radius: 0;color:white">在线阅读</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-cd" style="border-radius: 0;" href="/jingshi/">返回首页</a>
+        </li>
+      </div>
+        <br><br>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8"><br>
+      <br><h3><b>谁人回顾
+</b></h3>
+      <p>作者：馨可可洛希吸（刘子希） | 2019年10月</p>
+      <hr>
+      
+<p class="zw">
+
+  初冬，天早已冷了。<br><br>
+    门外细雪飘然，像极了故人的几缕银丝，直向道长的心底扎。<br><br>
+    女孩幼嫩的脸被华山的冽风吹得生疼，却还是痴痴地望着眼前凭栏看雪的道长。她伸出冻红了的手，拽了拽道长的衣角：<br>
+    “师父，你在等谁？”<br>
+    ……<br>
+    “师父？”<br>
+    ……<br>
+    师父，你在等谁？<br>
+    时不待人，人不如故。<br>
+    院儿里几株桃枝被新雪压得很低。道姑含笑，接过满斟的茶，一饮而尽。<br>
+    “俯首作揖谢师恩。呐，我喝了你的茶，就是你师父啦！咱们师徒一心，同去同归！”<br><br>
+
+少年的手紧紧攥着道姑递回的茶碗，手冻得有些皲裂，一言不发，生怯等点了点头。道姑被他这幅模样弄得发笑，摸了摸他的头，“你先站在这儿别动，师父去给你买包包和糖葫芦。”<br>
+“等、等一下！”<br>
+少年惊慌地拉住道姑的衣角，迟疑了一会儿，又忙将手缩到背后。<br>
+道姑噗嗤一声笑了出来，“怎么，害怕了？”<br>
+“才、才没有！”<br>
+“没有？那你方才，为何拽我衣角？”<br>
+或许是少年知道，只要他伸手，她就会回头。<br><br>
+
+少年曾对道姑说，想要名扬天下。道姑很是欣慰，为他配了一把称手的剑。她喜欢在冬日的暖阳里，一面为剑穗缠着流苏，一面听小徒弟讲自己的远大抱负。每逢入冬，道姑还亲手为他缝冬衣。若徒弟正跟师门其他师兄弟在外游历，她便再附上书信，寄去一两句叮嘱。<br>
+“你爱喝的酒，师父已经备好了，正等你回来呢。”<br>
+可时光从来残酷，将落雁迟作修竹，却不曾把月升化为日暮。<br>
+“你做的衣服太丑了。”<br>
+他将道姑为他缝的冬衣还给了她。几年不见，他褪去了昔日的怯懦，也消散了原本的天真稚嫩。<br><br>
+
+“穿着这样的衣服，我还怎么名扬天下。”<br>
+道姑许久没有回话。<br>
+“那……那师父带你去扬州买衣裳吧。”<br>
+一棵桃树，一位道姑，一段乐府，唱了十许年。<br>
+“当年那名剑大会，我记得可清嘞！那蓝衣女侠，准是纯阳弟子！”<br>
+“嗐！这谁看不出？我瞧那小少侠该是她徒弟。”<br>
+“可不，两人练的那太虚剑法啊……”<br><br>
+
+酒楼平日就嘈杂喧嚣。<br><br>
+自徒弟出师，道姑清闲时便来此饮酒。说是饮酒，酒楼却少有真酒客——这人多嘴杂的地方，总能听些江湖事。<br>
+她呢？她想她或许能听到有关徒弟的事。<br>
+“两位前辈，你们说的那位女侠，可否还有消息？”身后一位年轻人开口道。<br>
+道姑闻声，温酒的手微微一顿。<br><br>
+“她打完名剑大会就回去了吧……再我就不知了。诶，听说后来她徒弟出师，也挺厉害！”<br>
+“哦？那位小少侠又成了何方大侠，可否说来听听？”<br>
+“这——”<br>
+“小辈而已，不足提起。”<br><br>
+
+年轻人打断了那位前辈的话，眼中晃过一丝失措，闷声饮酒。<br>
+明知眼前为何人，道姑还是笑着，像初见少年的那年冬天，她接过茶碗时，一样。岁岁风霜，这次，茶换做酒，却是又一杯满斟。<br>
+“不然。后生可畏。”<br><br>
+一盏酒，散尽了余温，藏着欣喜、藏着无奈、藏着感慨、藏着道不完的思念，也藏着那天离别时的风雪。<br><br>
+凛冽的寒风中，道姑撑着伞，为道长拍落衣服上的雪。<br><br>
+“你到了那里，记得给我回个信。如果还缺衣裳就告诉我一声——”<br>
+“我衣服够用。”<br>
+“啊……啊，这是你的马驹吧，挺俊的嘛！马毛要经常刷，这样毛色才会——”<br>
+“这些我都知道。”<br>
+“那……”<br>
+“师父，你的亲友呢？”<br>
+“……你路上小心，一个人要照顾好自己……”<br>
+“……师父。”<br>
+“啊？”<br>
+“你在等谁？”<br><br>
+“我……”道姑转开脸，“你回来了我们就再一起喝酒吧，那时候估计桃花也开了……”<br><br>
+她撑着伞。大雪纷飞。<br><br>
+“我谁也没等，谁也不会来。”<br>
+道姑不会去挽留。<br><br>
+或许，她也不知，如果她伸手，他会不会回头。<br><br>
+华山，风停了。<br><br>
+道长转身摸了摸女孩的头。<br><br>
+“我谁也没等，谁也不会来。”<br>
+
+</p>
+
+
+
+
+
+<hr><p style="text-align:right;">纸稿编辑：</p>
+<br><br>
+
+</div></div></div>
+
+
+<br>
+
+<div class="p-2" style="background-color:white;">
+
+    <p class="dibusa">
+      © 2019-2021  《惊时》电子刊官方网站  All Right Reserved. <br><a href="#">电ICP备11000000号</a>
+        </p>  
+        </p> 
+        
+   
+    </div>
+
+
+</body>
+</html>
