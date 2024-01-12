@@ -1,36 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>暂停服务公告 | 池钓离吻花官方网站</title>
+  <title>池钓离吻花3 | 新版官网调试中</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.staticfile.org/foundation/5.5.3/css/foundation.min.css">
-  <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-  <script src="https://cdn.staticfile.org/foundation/5.5.3/js/foundation.min.js"></script>
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+ 
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script> 
   <style type="text/css">
-  button:hover{background: brown;}
+    * {font-family:微软雅黑,Arial,Tahoma,sans-serif;}
+    ::selection {background-color:#272727;color:#ffffff;}
+    .nav-item{margin-left:30px;}
+    .dropdown-menu {background:white;border: none;}
+    .dropdown-item{}
+    .foot {font-size:15px;background-color:#f0f0f0;text-align: center;padding-top:15px;margin:0;}
+    .btn{cursor: default;}
   </style>
-  <script src="https://cdn.staticfile.org/foundation/5.5.3/js/vendor/modernizr.js"></script>
 </head>
 <body>
-  <div style="padding: 20px;">
-<h1 style="text-align: center;">暂停服务公告</h2>
-<h4>各位玩家：</p>
-<h4>抱歉的通知您，由于维护原因，《池钓离吻花》将于2024年1月10日0时-2024年5月20日0时暂停官网和在线游戏服务。</p>
-<h4>感谢您对游戏的支持，如维护时间有变动，将在本页面另行通知。</p>
-<h4  style="text-align: right;">池钓游戏<br>2024年1月6日</p></h4>
 
-<p data-reveal-id="myModal" style="cursor: pointer;text-align: center;"><button style="font-size: 20px;background: orange;line-height: 300%;padding:0 10px;color: white;">改版升级玩家意见调查</button></p>
-<div id="myModal" class="reveal-modal" data-reveal>
-  <iframe src="https://www.wjx.cn/vm/wTojzCg.aspx" width="100%" height="500px" style="border:none;"></iframe>
-  <a class="close-reveal-modal">&times;</a>
+<nav class="navbar navbar-expand-md navbar-dark" style="background: rgba(0, 0, 0, 0.6);position: fixed;top: 0;width: 100%;z-index: 99999;">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"><img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAgtfqFrQYoxMuUpAIwxQY4tAI.png" height="90px"></a>
+ 
+  <!-- Toggler/collapsibe Button -->
+  <p class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" style="border:none;">
+    <span class="navbar-toggler-icon"></span>
+  </p>
+ 
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="/game/">首页</a>
+      </li>
+    
+      <li class="nav-item">
+        <a class="nav-link" href="/game/rank.html">玩家排行榜</a>
+      </li> 
+<li class="nav-item">
+        <a class="nav-link" href="/game/n2024co3.htm">历史版本</a>
+      </li> 
+<li class="nav-item">
+        <a class="nav-link" href="/game/n2024co2.htm">关于游戏</a>
+      </li>
+ <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
+        更多链接
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="https://tieba.baidu.com/f?kw=%E6%9D%8E%E6%96%87%E5%8C%96" target="_blank">百度李文化吧</a>
+      
+      </div>
+    </li>
+
+    </ul>
+  </div> 
+</nav>
+
+
+
+<!-- 轮播 -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <!-- 轮播图片 -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAgroyGrQYom8-xlQIwugU4wQc.png" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAgroyGrQYom8-xlQIwugU4wQc.png" class="d-block" style="width:100%">
+    </div>
+    <div class="carousel-item">
+      <img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAgroyGrQYom8-xlQIwugU4wQc.png" class="d-block" style="width:100%">
+    </div>
+  </div>
+  
+  <!-- 左右切换按钮 -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
 </div>
-<script>
-$(document).ready(function() {
-    $(document).foundation();
-})
-</script>
+
+
+
+
+
+<div class="container">
+  
+</div>
+
+
+
+<div class="foot">
+<p class="btn"><img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAgl4uGrQYo2KWixAMw7Qc4Rw.png" height="35px"></p></div>
 
 </body>
 </html>
-
