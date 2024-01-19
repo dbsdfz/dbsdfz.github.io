@@ -91,7 +91,7 @@ body {
 
 
 #welcome {
-    background-color: black;
+    background-image:url('https://13511974.s21i.faiusr.com/4/ABUIABAEGAAgu_yqrQYooKzWkQcwvQY4nwk.png');background-size: 100% 100%;
     text-align: center;
     font-weight: bold;
     overflow: hidden;
@@ -147,8 +147,8 @@ body {
 .t3,
 .t4,
 .t5 {
-    background-size: auto 100%;
-    background-image: url(https://img1.imgtp.com/2022/05/26/DBkUKIpN.png);
+    background-size: 100% 100%;
+    background-image: url(https://13511974.s21i.faiusr.com/4/ABUIABAEGAAgi9_qrQYowNazjAUwajhs.png);
 }
 
 .tt1,
@@ -156,8 +156,8 @@ body {
 .tt3,
 .tt4,
 .tt5 {
-       background-size: auto 100%;
-    background-image: url(https://img1.imgtp.com/2022/05/26/UFyEgqGg.png);
+       background-size: 100% 100%;
+    background-image: url(https://13511974.s21i.faiusr.com/4/ABUIABAEGAAg1N_qrQYo8ciRqQQwajhs.png);
 }
 
 .bl {
@@ -257,5 +257,4 @@ body {
     display: none;
 }
 
-.btn{border-radius: 50px;box-shadow: none;border: none;}
-.btn-primary{background-color:rgb(255, 49, 49);}
+.btn{border-radius:0;box-shadow: none;border: none;font-size:18px;background-color:#cf0000;padding:10px;}
