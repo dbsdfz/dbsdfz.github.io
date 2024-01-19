@@ -343,11 +343,11 @@ function shareText(score) {
         return '倒计时多了' + ((deviation_time / 1000) - 20).toFixed(2) + "s";
     }
     SubmitResults();
-    if (score <= 59) return '你就是歌姬吧';
-    if (score <= 109) return '弟中之弟';
-    if (score <= 125) return '恭喜你获得李文化的青睐';
-    if (score <= 149) return '李文化直接嫁给你';
-    return '人？';
+    if (score <= 59) return 'LV1 你就是歌姬吧';
+    if (score <= 109) return 'LV2 弟中之弟';
+    if (score <= 125) return 'LV3 文化的青睐';
+    if (score <= 149) return 'LV4 李文化直接嫁给你';
+    return 'SSR 文化之王';
 }
 
 function toStr(obj) {
