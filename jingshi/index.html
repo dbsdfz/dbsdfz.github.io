@@ -17,8 +17,8 @@
 
   <style type="text/css">
    
-    ::selection {background-color:#C4E1FF 
-;}
+    ::selection {background-color:#272727
+;color: white;}
 
 .nav-link {text-align: center;}
 
@@ -26,8 +26,8 @@
    
     * {border-radius:0;font-family:PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;transition:0.3s;}
     .nav-item{margin-left:30px;margin-right:30px;}
-    .dropdown-menu {background:white;border: none;border-radius: 0;padding:0;}
-    .dropdown-item{color:black;line-height:200%;font-size:17px;text-align: center;}
+    .dropdown-menu {background:darkred;border: none;border-radius: 0;padding:0;}
+    .dropdown-item{color:white;line-height:200%;font-size:17px;text-align: center;}
     .foot {background-color:#C00000;margin:0;}
     .btn{cursor: default;}
     a {text-decoration: none;}
@@ -48,8 +48,10 @@
 p.biaozi {font-size:18px;color:#C00000;text-align: center;border-bottom:2px solid #C00000;margin:30px 35%;padding-bottom:5px;width:30%;}
       .foot p {color:white  ;font-size:10px;line-height:400%;margin: 0;padding: 0;text-align: center;}
       
-.navbar-nav {height:100vh;padding-top:20vh;}
+.ppbtnq {width:100%;font-size:14px;padding:7px;}
+
 .ppbtn {width:100%;font-size:14px;padding:7px;}
+.navbar-collapse {background-image: url('https://1.s140i.faiscm.com/2/AIwBCAAQAhgAIIDUhfQFKKC808gHMO4FOO0C.jpg');background-size:100% 100%;padding:30px 0;}
 
 }
 
@@ -71,6 +73,9 @@ p.biaozi {font-size:18px;color:#C00000;text-align: center;border-bottom:2px soli
   p.biaozi {font-size:25px;font-weight: bold;color:#C00000;padding-left:15px;border-left:5px solid #C00000;margin-bottom:30px;margin-top: 30px;}
       .foot p {color:white  ;font-size:16px;line-height:450%;margin: 0;padding-left: 40px;padding-right: 25%;text-align:left;}
 .ppbtn {width:100%;font-size:18px;padding:15px;}
+.ppbtnq {width:100%;font-size:18px;padding:15px;}
+
+.navbar-collapse {background-color:white;}
 }
 
 p span  {margin:0 10px;}
@@ -83,8 +88,16 @@ bt24 {font-size:24px;}
 .ppbtn a {color:black;text-decoration: none;}
 .ppbtn:hover a{color: white;}
 
+
+.ppbtnq {color:#272727;border: none;border-bottom:1px solid lightgrey;background: none;text-align: left;cursor: text;}
+
+.ppbtnq a {color:black;text-decoration: none;cursor: text;}
+
+
+
 span.listdate{position: absolute;right:10%;color:grey;}
-jjsx::before {content: "[即将上架]";color:darkred;font-size:0.6em;margin-left:7px;}
+jjsx::before {content: "[即将上架]";color:#c00000;font-size:0.9em;margin-left:7px;}
+.ppbtn:hover .listdate{color: white;}
 .dropdown-item:hover{color:#C00000;background-color:#e0e0e0;}
   </style>
 
@@ -105,46 +118,30 @@ jjsx::before {content: "[即将上架]";color:darkred;font-size:0.6em;margin-lef
 <img src="https://13511974.s21i.faiusr.com/4/ABUIABAEGAAgwv-ErQYoyqf4pQUwJzgn.png" height="28px;" style="cursor: pointer;">  </p>
  
   <!-- Navbar links -->
-  <div class="collapse navbar-collapse" id="collapsibleNavbar" style="background:white ;">
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link active" href="/jingshi/">首页</a> 
+        <a class="nav-link active" href="/jingshi/">总目录</a> 
       </li>
 
- <!-- Dropdown -->
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
-        关于惊时
-      </a>
-      <div class="dropdown-menu">        <a class="dropdown-item" href="/jingshi/bkjs.html">本刊介绍</a>
 
-        <a class="dropdown-item" href="/jingshi/zbzc.html">主编致辞</a>
-        
-        <a class="dropdown-item" href="/jingshi/0bwh.html">编委会</a>
 
-      </div>
+      <li class="nav-item">
+        <a class="nav-link" href="/jingshi/bkjs.html">本刊介绍</a>
+      </li>      
+      <li class="nav-item">
+        <a class="nav-link" href="/jingshi/zbzc.html">主编致辞</a>
+      </li>      
+      <li class="nav-item">
+        <a class="nav-link" href="/jingshi/0bwh.html">编 委 会</a>
+      </li>
 
-    </li>
- 
+
+
 <li class="nav-item">
         <a class="nav-link" href="/jingshi/buy.html">在线订阅</a>
       </li>
      
-
- <!-- Dropdown -->
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
-        友情链接
-      </a>
-      <div class="dropdown-menu">        <a class="dropdown-item" href="//www.msannu.cn/" target="_blank">东北师范大学附属中学</a>
-
-        <a class="dropdown-item" href="/" target="_blank">dbsdfz Cloud</a>
-        
-       
-
-      </div>
-
-    </li>
 
 
 
@@ -170,38 +167,63 @@ jjsx::before {content: "[即将上架]";color:darkred;font-size:0.6em;margin-lef
 
  <div class="zwen animate__animated animate__fadeInUp" style="background-color:white;">
 
-<p class="biaozi">全部文章</p>
+<p class="biaozi">特别企划</p>
 
 
 
 
-<button class="ppbtn"><a  href="https://dbsdfz.github.io/jingshi/uploads/article-0-8-9-7.html" target="_blank">卷首献语：《惊时少年说》<span class="listdate">编委会</span></a></button>
+<a  href="https://dbsdfz.github.io/jingshi/uploads/article-0-8-9-7.html" target="_blank"><button class="ppbtn">卷首献语：《惊时少年说》<span class="listdate">编委会</span></button></a>
 
-<button class="ppbtn"><a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-1.html" target="_blank">英雄联盟是一种信仰<span class="listdate">崔锦棠</span></a></button>
+<p class="biaozi">文章目录</p>
 
-<button class="ppbtn"><a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-2.html" target="_blank">晨熹如洪，一骑逸凡<span class="listdate">赵禹淳</span></a></button>
-<button class="ppbtn"><a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-3.html" target="_blank">梦<span class="listdate">王一帆</span></a></button>
-<button class="ppbtn"><a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-4.html" target="_blank">有一种足球叫亚泰<span class="listdate">董展</span></a></button>
 
-<button class="ppbtn"><a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-5.html" target="_blank">东野圭吾的推理世界<span class="listdate">刘可心</span></a></button>
-<button class="ppbtn"><a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-6.html" target="_blank">来客<span class="listdate">周航</span></a></button>
-<button class="ppbtn"><a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-7.html" target="_blank">叹红颜<span class="listdate">梁鑫</span></a></button>
-<button class="ppbtn"><a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-8.html" target="_blank">兜兜转转独自成长，踉踉跄跄不惧远方<span class="listdate">徐硕良</span></a></button>
-<button class="ppbtn"><a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-9.html" target="_blank">山河根脉<span class="listdate">李若凡</span></a></button>
-<button class="ppbtn"><a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-1-0.html" target="_blank">关于我<span class="listdate">陈骁</span></a></button>
-<button class="ppbtn"><a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-1-1.html" target="_blank">谁人回顾<span class="listdate">刘子希</span></a></button>
-<button class="ppbtn"><a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-1-2.html" target="_blank">六尺之下<span class="listdate">于跃晨 王艺曈</span></a></button>
+<a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-1.html" target="_blank"><button class="ppbtn">英雄联盟是一种信仰<span class="listdate">崔锦棠</span></button></a>
 
-<button class="ppbtn"><a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-1-3.html" target="_blank">来振华做一场不愿醒的梦<span class="listdate">杜佳依</span></a></button>
-<button class="ppbtn"><a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-1-4.html" target="_blank">如果能重来让我做李白<span class="listdate">王柄智</span></a></button>
-<button class="ppbtn"><a target="_blank">兽性<jjsx></jjsx><span class="listdate">丁末</span></a></button>
-<button class="ppbtn"><a target="_blank">快乐扫雷<jjsx></jjsx><span class="listdate">洪宇凡</span></a></button>
-<button class="ppbtn"><a target="_blank">屹立在历史长河中的痴情王子<jjsx></jjsx><span class="listdate">许诺</span></a></button>
-<button class="ppbtn"><a target="_blank">春<jjsx></jjsx><span class="listdate">朱晓雅</span></a></button>
-<button class="ppbtn"><a target="_blank">一件小事<jjsx></jjsx><span class="listdate">毛宇轩</span></a></button>
-<button class="ppbtn"><a target="_blank">反向进化论<jjsx></jjsx><span class="listdate">董宇骐</span></a></button>
-<button class="ppbtn"><a target="_blank">过节<jjsx></jjsx><span class="listdate">朱晓雅</span></a></button>
-<button class="ppbtn"><a target="_blank">盘点我活泼可爱的二十班<jjsx></jjsx><span class="listdate">牟彤</span></a></button>
+<a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-2.html" target="_blank"><button class="ppbtn">晨熹如洪，一骑逸凡<span class="listdate">赵禹淳</span></button></a>
+<a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-3.html" target="_blank"><button class="ppbtn">梦<span class="listdate">王一帆</span></button></a>
+<a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-4.html" target="_blank"><button class="ppbtn">有一种足球叫亚泰<span class="listdate">董展</span></button></a>
+
+<a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-5.html" target="_blank"><button class="ppbtn">东野圭吾的推理世界<span class="listdate">刘可心</span></button></a>
+
+<a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-6.html" target="_blank"><button class="ppbtn">来客<span class="listdate">周航</span></button></a>
+<a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-7.html" target="_blank"><button class="ppbtn">叹红颜<span class="listdate">梁鑫</span></button></a>
+<a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-8.html" target="_blank"><button class="ppbtn">兜兜转转独自成长，踉踉跄跄不惧远方<span class="listdate">徐硕良</span></button></a>
+<a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-0-9.html" target="_blank"><button class="ppbtn">山河根脉<span class="listdate">李若凡</span></button></a>
+<a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-1-0.html" target="_blank"><button class="ppbtn">关于我<span class="listdate">陈骁</span></button></a>
+<a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-1-1.html" target="_blank"><button class="ppbtn">谁人回顾<span class="listdate">刘子希</span></button></a>
+<a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-1-2.html" target="_blank"><button class="ppbtn">六尺之下<span class="listdate">于跃晨 王艺曈</span></button></a>
+
+<a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-1-3.html" target="_blank"><button class="ppbtn">来振华做一场不愿醒的梦<span class="listdate">杜佳依</span></button></a>
+<a  href="https://dbsdfz.github.io/jingshi/uploads/article-1-0-1-4.html" target="_blank"><button class="ppbtn">如果能重来让我做李白<span class="listdate">王柄智</span></button></a>
+
+
+
+
+
+
+
+
+<p class="biaozi">即将上架</p>
+
+
+
+
+
+
+<button class="ppbtnq"><a target="_blank">兽性<span class="listdate">丁末</span></a></button>
+<button class="ppbtnq"><a target="_blank">快乐扫雷<span class="listdate">洪宇凡</span></a></button>
+<button class="ppbtnq"><a target="_blank">匠心致远<span class="listdate">朱晓雅</span></a></button>
+<button class="ppbtnq"><a target="_blank">屹立在历史长河中的痴情王子<span class="listdate">许诺</span></a></button>
+<button class="ppbtnq"><a target="_blank">春<span class="listdate">朱晓雅</span></a></button>
+<button class="ppbtnq"><a target="_blank">一件小事<span class="listdate">毛宇轩</span></a></button>
+<button class="ppbtnq"><a target="_blank">寻找内心净土，心灵圣地<span class="listdate">唐嘉隆</span></a></button>
+<button class="ppbtnq"><a target="_blank">反向进化论<span class="listdate">董宇骐</span></a></button>
+<button class="ppbtnq"><a target="_blank">过节<span class="listdate">朱晓雅</span></a></button>
+<button class="ppbtnq"><a target="_blank">盘点我活泼可爱的二十班<span class="listdate">牟彤</span></a></button>
+
+
+
+
 
 
 
