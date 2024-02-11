@@ -1,4 +1,5 @@
-::selection {background-color:#C4E1FF;}
+/* 春潮传媒原创网页样式获得产权保护 侵权必究 */
+
 * {font-family:PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;}
 body {margin:0;padding:0;background:#141C35;color:white;}
 ul {
@@ -21,7 +22,7 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 26px 60px;
+    padding: 26px 40px;
     text-decoration: none;
     font-size:20px;}
 
@@ -34,7 +35,7 @@ li a:hover:not(.active) {
     color:#2894FF;
 }
 
-li.logo {padding:18px 100px;}
+li.logo {padding-top:18px;padding-left:13.88%;padding-right:70px;}
 div.topi {height:80px;}
 img {margin:0;padding:0;vertical-align: middle;}
 div.bottoms {padding:60px 14%;position:relative;}
