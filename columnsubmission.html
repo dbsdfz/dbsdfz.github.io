@@ -5,9 +5,34 @@
     <link href="http://guihuayun.com/images/menu.ico" rel="icon">
 	<title>专栏投稿-春潮官网</title>
 	<link rel="stylesheet" type="text/css" href="chao.css">
+	<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var audio = document.createElement('audio');
+            audio.setAttribute('src', 'back.mp3'); // 替换为你的音乐URL
+            audio.setAttribute('autoplay', 'autoplay');
+            audio.setAttribute('loop', 'loop');
+            audio.style.display = 'none';
+
+            // Safari 和旧版移动端浏览器可能不允许自动播放，尝试通过用户交互事件触发播放
+            document.body.addEventListener('touchstart', function() {
+                if (!audio.paused) return;
+                audio.play();
+            });
+
+            // 尝试加载并播放音乐
+            audio.load();
+            // 某些浏览器可能需要在用户交互后才能调用play方法
+            try {
+                audio.play().catch(function(err) {
+                    console.error('Failed to auto-play audio.', err);
+                });
+            } catch (e) {
+                console.error('Unexpected error on auto-play:', e);
+            }
+        });
+    </script>
 </head>
-<body><audio id="music1" controls="controls" autoplay="autoplay" preload id="music1" hidden>
-<source src="back.mp3" />
+<body>
 </audio>
 <ul>
 	<li class="logo"><img src="https://13511974.s21i.faiusr.com/4/6/ABUIABAEGAAgucOirgYolOH-iwMwpwI4ogE.png" height="45px"></li>
