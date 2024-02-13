@@ -1,4 +1,5 @@
 /* 春潮传媒原创网页样式获得产权保护 侵权必究 */
+        ::selection {background:#40bbe1;color:white;}
 
 h2.error {padding:30px 100px;font-weight:normal;}
 * {font-family:PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;}
