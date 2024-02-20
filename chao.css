@@ -37,7 +37,7 @@ li a:hover:not(.active) {
     color:#2894FF;
 }
 
-li.logo {padding-top:18px;padding-left:13.88%;padding-right:70px;}
+li.logo {padding-top:18px;padding-left:13.88%;padding-right:70px;background-image:url('https://13511974.s21i.faiusr.com/4/10/ABUIABAEGAAgneLTrgYol_bl7gMwzwM4tQE.png');background-size:100% 100%;}
 div.topi {height:80px;}
 img {margin:0;padding:0;vertical-align: middle;}
 div.bottoms {padding:60px 14%;position:relative;}
