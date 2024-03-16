@@ -1,4 +1,4 @@
-::selection {background:rgba(135, 206, 250, 0.6);color:#000;}
+::selection {background:rgba(0, 160, 107, 0.8);color:#fff;}
 *{transition:all 0s;}
 nav.navbar {background:#004100;border-radius:0;line-height:61px;border:none;margin:0;padding:0px 20px;}
 ul.navbar-nav li a {margin:0px 10px;padding:0px;color:#fff;font-size:18px;line-height:280%;vertical-align:top;opacity:1.0;cursor:pointer;}
@@ -24,8 +24,8 @@ body {background:;}
 .teachercard-xs {margin:10px 0;padding:0px;border:1px solid #e0e0e0;position:relative;height:115px;border-left:;cursor:pointer;
 box-shadow:0px 0px 0px #f0f0f0;background:#F6FBF4;transition:box-shadow 0.5s;}
 .teachercard-xs img {position:absolute;top:10px;left:20px;height:95px;}
-.teachercard-xs h1 {font-size:20px;position: absolute;top:28px;left:140px;margin:0;}
-.teachercard-xs p {font-size:15px;position: absolute;top:63px;left:140px;color:grey;margin:0;}
+.teachercard-xs h1 {font-size:20px;position: absolute;top:28px;left:130px;margin:0;}
+.teachercard-xs p {font-size:15px;position: absolute;top:63px;left:130px;color:grey;margin:0;}
 .teachercard-xs .topbb {width:6px;background:;margin:0;padding:0;position:relative;left:0;height:160px;}
 
 
