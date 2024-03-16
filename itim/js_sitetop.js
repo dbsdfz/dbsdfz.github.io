@@ -2,7 +2,7 @@ document.writeln("<div class=\"container\">");
 document.writeln("<div class=\"row\">");
 document.writeln("<nav class=\"navbar navbar-expand-md navbar-dark\">");
 document.writeln("  <!-- Brand -->");
-document.writeln("  <a class=\"navbar-brand\"><img src=\"https://13511974.s21i.faiusr.com/4/10/ABUIABAEGAAg-IjXrwYotNb-wgcwmAc40gE.png\" height=\"70px\"></a>");
+document.writeln("  <a class=\"navbar-brand\"><img src=\"https://13511974.s21i.faiusr.com/4/10/ABUIABAEGAAg1t7XrwYo4J2EmAUw1QU40gE.png\" height=\"70px\"></a>");
 document.writeln(" ");
 document.writeln("  <!-- Toggler/collapsibe Button -->");
 document.writeln("  <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapsibleNavbar\">");
