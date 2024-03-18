@@ -1,27 +1,157 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>首页-池钓 APP For Android</title>
-	<script type="text/javascript" src="/game/main.js"></script>
-	<script type="text/javascript" src="/game/mainpage_topi.js"></script>
-	<script type="text/javascript" src="/game/mainpage_topdate.js"></script>
-	<script type="text/javascript" src="/game/popss.js"></script>
-	<script type="text/javascript" src="/game/mainpage_popi.js"></script>
-	<script type="text/javascript" src="/game/pop_banner.js"></script>
-	<script type="text/javascript" src="/game/pop3.js"></script>
-	<script type="text/javascript" src="/game/jquery.min.js"></script>
-	<script type="text/javascript" src="/game/skot.js"></script>
-	<script type="text/javascript" src="/game/mainpage_bottomi.js"></script>
-	<script type="text/javascript" src="/game/noscript.js"></script>
-	<script type="text/javascript" src="/game/main2024.js"></script>
-	<script type="text/javascript" src="/game/2024add3.js"></script>
-	<script type="text/javascript" src="/game/2024add2.js"></script>
-	<script type="text/javascript" src="/game/twitter_style_button.js"></script>
-</head>
-<body>
-<noscript>Your browser does not support Javascript</noscript>
-<h1>网站升级中</h1>
-</body>
+  <head>
+	  <!--全案支持：豪杰科技 www.hojob51.com-->
+    <title>池钓APP-首页</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.net/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.staticfile.net/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.net/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.net/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      div.top {
+        background-image: url(https://1.s140i.faiscm.com/2/AIwBCAAQAhgAIM_O99UFKIT7uIkFMOASONAP.jpg);
+        background-size: 100% 100%;
+        height: 70px;
+        position: relative;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      div.btm {
+        background-image: url(https://1.s140i.faiscm.com/2/AIwBCAAQAhgAIM_O99UFKIT7uIkFMOASONAP.jpg);
+        background-size: 100% 100%;
+        text-align: center;
+      }
+      div.btm p {
+        font-size: 12px;
+        text-align: center;
+        opacity: 0.9;
+        line-height: 280%;
+        color: #fff;
+        margin: 0;
+      }
+
+      span.app {
+        font-size: 12px;
+        color: white;
+        margin-left: 10px;
+        padding: 5px;
+        border: 1px solid white;
+        border-radius: 5px;
+      }
+      div.logoi {
+        position: absolute;
+        left: 10%;
+      }
+      div.banne {
+        position: relative;
+        background: radial-gradient(#fff, #e2eaff);
+        height: 95vh;
+      }
+      div.banne h1 {
+        padding-top: 40vh;
+        font-weight: bold;
+        background: linear-gradient(to right, #6912cb, #2475fc);
+        text-align: center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 100%;
+      }
+      button.down {
+        font-size: 18px;
+        padding: 0 30px;
+        line-height: 260%;
+        color: #fff;
+        margin-top: 40px;
+        background: #00d354;
+        transition: 0.5s;
+        border-radius: 7px;
+        border: 1px solid #00d354;
+      }
+
+      button.play {
+        font-size: 18px;
+        padding: 0 30px;
+        margin-left: 10px;
+        line-height: 260%;
+        color: #6912cb;
+        margin-top: 40px;
+        transition: 0.5s;
+        border-radius: 7px;
+        border: 1px solid #6912cb;
+        background: rgba(0, 0, 0, 0);
+      }
+      button.down:hover {
+        background: #1d953f;
+        transition: 0.5s;
+        box-shadow: 0 10px 20px #95abe0;
+      }
+      button.play:hover {
+        background: linear-gradient(to right, #6912cb, #2475fc);
+        transition: 0.5s;
+        box-shadow: 0 10px 20px #95abe0;
+        color: #fff;
+      }
+
+      div.navi {
+        color: #fff;
+        font-size: 16px;
+        position: absolute;
+        right: 10%;
+        margin: 0;
+        display: inline-block;
+        height: 70px;
+        line-height: 440%;
+        padding: 0 10px;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+      div.navi:hover {
+        background: #e2eaff;
+        color: #6912cb;
+      }
+      span.bbh {
+        opacity: 0.9;
+        font-size: 11px;
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <div class="logoi">
+        <img
+          src="https://13511974.s21i.faiusr.com/4/10/ABUIABAEGAAgtYKprwYogdCP3wYwjAI4wgE.png"
+          height="70px"
+        />
+        <span class="app">App for Android</span>
+      </div>
+      <div class="navi" onclick="window.location.href='/game/history'">
+        版本记录
+      </div>
+    </div>
+
+    <div class="banne">
+      <h1>池钓离吻花2周年，现在玩，无需连接互联网</h1>
+      <p style="text-align: center">
+        <button
+          class="down"
+          onclick="window.location.href='https://wwb.lanzout.com/imo7o1rui3wh'"
+        >
+          立即下载
+        </button>
+
+        <button class="play" onclick="window.location.href='/game/cdlwh'">
+          在线游戏
+        </button>
+      </p>
+    </div>
+
+    <div class="btm"><p>© 2022-2024 春潮互动娱乐</p></div>
+  </body>
 </html>
