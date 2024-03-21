@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title> </title>
+	<title>东风汽车集团有限公司</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style type="text/css">
 		body {margin:0;padding:0;}
@@ -38,15 +38,30 @@
 <body>
 	<div id="versiondiv0">
 	<h3 class="zxred">您的游戏有新的版本待更新！</h3>
-	<p class="zxjm">请前往 https://dbsdfz.github.io/game/ 下载最新版本。<a href="https://dbsdfz.github.io/game/" target="_blank">去下载</a></p>
+	<p class="zxjm">请前往 https://dbsdfz.github.io/game/ 下载最新版本。<a id="copyLink" href="#">复制网站链接</a></p>
 	</div>
 	<div id="versiondiv1">
 	<h3 class="zxred">您的游戏有新的版本待更新！</h3>
-	<p class="zxjm">请前往 https://dbsdfz.github.io/game/ 下载最新版本。<a href="https://dbsdfz.github.io/game/" target="_blank">去下载</a></p>
+	<p class="zxjm">请前往 https://dbsdfz.github.io/game/ 下载最新版本。<a id="copyLink" href="#">复制网站链接</a></p>
 	</div>
 	<div id="versiondiv2">
 	<h3 class="zxgre">恭喜，您的游戏版本已经是最新！</h3>
 	<p class="zxjm">当前版本号：ver 1.5（Beta 6）<a href="https://dbsdfz.github.io/game/checkappupdate.html?version=2">刷新</a></p>
 	</div>
+
+<script>
+document.getElementById('copyLink').addEventListener('click', function(event) {
+  event.preventDefault(); // 阻止默认的链接跳转行为
+  const link = 'https://dbsdfz.github.io/game/';
+  navigator.clipboard.writeText(link)
+    .then(() => {
+      alert('网站链接已复制，请前往浏览器打开');
+    })
+    .catch(err => {
+      console.error('复制链接到剪贴板时出错:', err);
+    });
+});
+</script>
+	
 </body>
 </html>
