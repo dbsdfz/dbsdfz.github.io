@@ -152,8 +152,24 @@
         margin-left: 5px;
       }
     </style>
+    <script>
+        function mainCheck() {
+        	var ua = navigator.userAgent.toLowerCase();
+        	if (ua.match(/micromessenger/i) == "micromessenger") {
+        		return true;
+        	}
+        	else {
+        		return false;
+        	}
+        }
+
+        if (mainCheck()) {
+        	document.writeln("<div class=\"alert alert-success\">您正在使用微信访问本站，可能无法正常下载APP</div>");
+        }
+    </script>
   </head>
   <body>
+    	<div id="mainCheck"></div>
     <div class="mu5735">
       🕯️我们在此向中国东方航空“2022·3·21”空难事故的遇难者献上诚挚的哀悼。<a
         href="https://baike.baidu.com/item/3%C2%B721%E4%B8%9C%E8%88%AA%E5%AE%A2%E6%9C%BA%E4%BA%8B%E6%95%85"
