@@ -1,30 +1,51 @@
 <!doctype html>
-<html>
+<html class="">
   <head>
+    <!--grey-->
     <title>池钓APP-版本记录</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.staticfile.net/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/4.3.1/css/bootstrap.min.css"/>
     <script src="https://cdn.staticfile.net/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.staticfile.net/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.net/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css">
     <style type="text/css">
-      ::selection {
-        background:rgba(135,206,250,0.5);
-      }
       * {
       font-family:
           阿里巴巴普惠体,
           PingFang SC,
           sans-serif;
       }
+      .mu5735index {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+      }
+      .mu5735 {
+        width: 100%;
+        margin: 0;
+        padding: 15px 0;
+        font-size: 15px;
+        color: #fff;
+        background: #000;
+        text-align: center;
+      }
+      .mu5735 a {
+        margin-left: 10px;
+        text-decoration: none;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+      }
+      ::selection {
+        background: rgba(135, 206, 250, 0.5);
+      }
       div.top {
         background-image: url(https://1.s140i.faiscm.com/2/AIwBCAAQAhgAIM_O99UFKIT7uIkFMOASONAP.jpg);
         background-size: 100% 100%;
-        height: 70px;
+        height: 60px;
         position: relative;
         width: 100%;
         margin: 0;
@@ -45,27 +66,77 @@
       }
 
       span.app {
-        font-size: 12px;
+        font-size: 10px;
         color: white;
         margin-left: 10px;
-        padding: 5px;
+        padding: 3px;
         border: 1px solid white;
-        border-radius: 5px;
+        border-radius: 5px;display:none;
       }
       div.logoi {
         position: absolute;
         left: 10%;
       }
+      div.banne {
+        position: relative;
+        background: radial-gradient(#fff, #e2eaff);
+        height: 95vh;
+      }
+      div.banne h1 {
+        padding-top: 40vh;
+        font-weight: bold;
+        background: linear-gradient(to right, #6912cb, #2475fc);
+        text-align: center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 100%;
+        font-family:Microsoft Yahei UI,sans-serif;
+      }
+      button.down {
+        font-size: 18px;
+        padding: 0 25px;
+        line-height: 240%;
+        color: #fff;
+        margin-top: 40px;
+        background: #00d354;
+        transition: 0.5s;
+        border-radius: 7px;
+        border: 1px solid #00d354;
+      }
+
+      button.play {
+        font-size: 18px;
+        padding: 0 25px;
+        margin-left: 10px;
+        line-height: 240%;
+        color: #6912cb;
+        margin-top: 40px;
+        transition: 0.5s;
+        border-radius: 7px;
+        border: 1px solid #6912cb;
+        background: rgba(0, 0, 0, 0);
+      }
+      button.down:hover {
+        background: #1d953f;
+        transition: 0.5s;
+        box-shadow: 0 10px 20px #95abe0;
+      }
+      button.play:hover {
+        background: linear-gradient(to right, #6912cb, #2475fc);
+        transition: 0.5s;
+        box-shadow: 0 10px 20px #95abe0;
+        color: #fff;
+      }
 
       div.navi {
         color: #fff;
-        font-size: 16px;
+        font-size: 20px;
         position: absolute;
         right: 10%;
         margin: 0;
         display: inline-block;
-        height: 70px;
-        line-height: 440%;
+        height: 60px;
+        line-height: 300%;
         padding: 0 10px;
         transition: all 0.3s;
         cursor: pointer;
@@ -74,6 +145,15 @@
         background: #e2eaff;
         color: #6912cb;
       }
+      span.bbh {
+        opacity: 0.9;
+        font-size: 11px;
+        margin-left: 5px;
+      }
+      .dropdown-menu {background:#fff;border:none;padding:0;
+        border-radius:13px;box-shadow:0 10px 20px #e2eaff;min-width:130px;}
+      .dropdown-item {color:grey;border-radius:13px;margin:6px;padding:6px 10px;width:120px;transition:all 0.3s;text-align:center;}
+      .dropdown-item:hover {background:#e2eaff;}
 
       div.listof {
         border-radius: 6px;
@@ -96,7 +176,7 @@
         font-family: PingFang SC,Arial, sans-serif;
       }
       div.listof h2 {
-        font-size: 70px;
+        font-size: 55px;
         position: absolute;
         right: 6%;
         bottom: 10px;
@@ -109,31 +189,63 @@
         position: absolute;
         top: 115px;
         left: 6%;
-        z-index: 9999;
+        z-index: 99;
         opacity:0.9;
       }
     </style>
+    <script>
+        function mainCheck() {
+        	var ua = navigator.userAgent.toLowerCase();
+        	if (ua.match(/micromessenger/i) == "micromessenger") {
+        		return true;
+        	}
+        	else {
+        		return false;
+        	}
+        }
+
+        if (mainCheck()) {
+        	document.writeln("<div class=\"alert alert-success\" style=\"margin:0;\">您正在使用微信访问本站，可能无法正常下载APP</div>");
+        }
+    </script>
   </head>
   <body>
+    	<div id="mainCheck" style="margin:0;"></div>
+    <!-- <div class="alert alert-danger" style="margin:0;">Beta 4版本（ver 1.5）还未开放下载，请收到更新提示的用户不要点击下载链接。</div> -->
+   <!-- <div class="mu5735">
+      🕯️我们在此向中国东方航空“2022·3·21”空难事故的遇难者献上诚挚的哀悼。<a
+        href="https://baike.baidu.com/item/3%C2%B721%E4%B8%9C%E8%88%AA%E5%AE%A2%E6%9C%BA%E4%BA%8B%E6%95%85"
+        target="_blank"
+        >了解更多</a
+      > -->
+    </div>
     <div class="top">
       <div class="logoi">
         <img
           src="https://13511974.s21i.faiusr.com/4/10/ABUIABAEGAAgtYKprwYogdCP3wYwjAI4wgE.png"
-          height="70px"
+          height="60px"
         />
-        <span class="app">App for Android</span>
+        <span class="app">Beta</span>
       </div>
-      <div class="navi" onclick="window.location.href='/game/'">返回</div>
+     <div class="dropdown" style="z-index:999;">
+      <div data-toggle="dropdown" class="navi">
+        <i class="fa fa-bars"></i>
+      </div>
+<div class="dropdown-menu">
+    <a class="dropdown-item" href="/game/">网站首页</a>
+    <a class="dropdown-item" href="/game/history">版本记录</a>
+    <a class="dropdown-item" href="/game/questions">常见问题</a>
+    <a class="dropdown-item" href="/game/privacy">服务协议</a>
+    <a class="dropdown-item" href="/game/privacy">隐私政策</a>
+  </div>
+</div>
     </div>
+
     <div class="container">
-      <img
-        src="https://13511974.s21i.faiusr.com/4/10/ABUIABAEGAAgxInirwYo7qDr0QYw7w042QI.png"
-        width="100%"
-      />
 
       <div class="listof">
         <h1>2024-03-19</h1>
-        <h2>Beta5</h2>
+        <h2>v1.2 Beta3</h2>
         <p>
           安卓Android APP
           Beta5版本正式上线。该版本数据信息全部存储在用户本地，除版本更新之外不需要接入互联网。
@@ -142,28 +254,28 @@
 
       <div class="listof">
         <h1>2024-03-08</h1>
-        <h2>Beta2</h2>
+        <h2>v1.0 Beta2</h2>
         <p>
-          妇女节，池钓APP Beta2，即首个公开发行的版本正式上线，运行于Android平台和HarmonyOS平台中。
+          妇女节，首个公开发行的版本正式上线，运行于Android平台和HarmonyOS平台中。
         </p>
       </div>
 
       <div class="listof">
         <h1>2024-02-25</h1>
-        <h2>Beta1</h2>
-        <p>池钓 Android and HarmonyOS APP Beta1版本在内部测试上线。</p>
+        <h2>v0.5 Beta1</h2>
+        <p>池钓 Android and HarmonyOS APP Beta1 版本在内部测试上线。</p>
       </div>
 
       <div class="listof">
         <h1>2023-12</h1>
-        <h2>Beta0</h2>
+        <h2>Beta Start</h2>
         <p>在《池钓离吻花》网页端上线两周年之际，安卓APP项目正式立项，开始筹备策划。</p>
       </div>
 
       <div class="listof">
         <h1>2022-04</h1>
-        <h2>Web 1.0</h2>
-        <p>网页小游戏《池钓离吻花》正式上线，最开始搭载于扣叮平台，后由于遭到恶意举报，项目整体迁移至Github。游戏一经上线，就在小范围内获得了现象级关注。</p>
+        <h2>Web Start</h2>
+        <p>网页小游戏正式上线，最开始搭载于扣叮平台，后由于遭到恶意举报，项目整体迁移至Github。</p>
       </div>
     </div>
 
