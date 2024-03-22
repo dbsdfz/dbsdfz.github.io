@@ -33,7 +33,7 @@
         font-size: 15px;
         color: #fff;
         background: #000;
-        text-align: center;   display:none;
+        text-align: center;
       }
       .mu5735 a {
         margin-left: 10px;
@@ -164,18 +164,19 @@
         }
 
         if (mainCheck()) {
-        	document.writeln("<div class=\"alert alert-success\">您正在使用微信访问本站，可能无法正常下载APP</div>");
+        	document.writeln("<div class=\"alert alert-success\" style=\"margin:0;\">您正在使用微信访问本站，可能无法正常下载APP</div>");
         }
     </script>
   </head>
   <body>
-    	<div id="mainCheck"></div>
-    <div class="mu5735">
+    	<div id="mainCheck" style="margin:0;"></div>
+    <div class="alert alert-danger" style="margin:0;">Beta 4版本（ver 1.5）还未开放下载，请收到更新提示的用户不要点击下载链接。</div>
+   <!-- <div class="mu5735">
       🕯️我们在此向中国东方航空“2022·3·21”空难事故的遇难者献上诚挚的哀悼。<a
         href="https://baike.baidu.com/item/3%C2%B721%E4%B8%9C%E8%88%AA%E5%AE%A2%E6%9C%BA%E4%BA%8B%E6%95%85"
         target="_blank"
         >了解更多</a
-      >
+      > -->
     </div>
     <div class="top">
       <div class="logoi">
