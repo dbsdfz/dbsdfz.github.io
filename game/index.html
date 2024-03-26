@@ -1,0 +1,226 @@
+
+
+<!doctype html>
+<html class="aidao">
+  <head>
+    <!--grey-->
+    <title>池钓APP-首页</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <script src="https://cdn.staticfile.net/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.net/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.net/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+      * {
+      font-family:
+          阿里巴巴普惠体,
+          PingFang SC,
+          sans-serif;
+      }
+      .aidao {
+        filter: grayscale(100%);
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+      }
+      .aidaodiv {
+        width: 100%;
+        margin: 0;
+        padding: 15px 0;
+        font-size: 15px;
+        color: #fff;
+        background: #000;
+        text-align: center;
+      }
+      .aidaodiv a {
+        margin-left: 10px;
+        text-decoration: none;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+      }
+      ::selection {
+        background: rgba(135, 206, 250, 0.5);
+      }
+      div.top {
+        background-image: url(https://1.s140i.faiscm.com/2/AIwBCAAQAhgAIM_O99UFKIT7uIkFMOASONAP.jpg);
+        background-size: 100% 100%;
+        height: 60px;
+        position: relative;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      div.btm {
+        background-image: url(https://1.s140i.faiscm.com/2/AIwBCAAQAhgAIM_O99UFKIT7uIkFMOASONAP.jpg);
+        background-size: 100% 100%;
+        text-align: center;
+      }
+      div.btm p {
+        font-size: 12px;
+        text-align: center;
+        opacity: 0.9;
+        line-height: 280%;
+        color: #fff;
+        margin: 0;
+      }
+
+      span.app {
+        font-size: 10px;
+        color: white;
+        margin-left: 10px;
+        padding: 3px;
+        border: 1px solid white;
+        border-radius: 5px;display:none;
+      }
+      div.logoi {
+        position: absolute;
+        left: 10%;
+      }
+      div.banne {
+        position: relative;
+        background: radial-gradient(#fff, #e2eaff);
+        height: 95vh;
+      }
+      div.banne h1 {
+        padding-top: 40vh;
+        font-weight: bold;
+        background: linear-gradient(to right, #6912cb, #2475fc);
+        text-align: center;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width: 100%;
+        font-family:Microsoft Yahei UI,sans-serif;
+      }
+      button.down {
+        font-size: 18px;
+        padding: 0 25px;
+        line-height: 240%;
+        color: #fff;
+        margin-top: 40px;
+        background: #00d354;
+        transition: 0.5s;
+        border-radius: 7px;
+        border: 1px solid #00d354;
+      }
+
+      button.play {
+        font-size: 18px;
+        padding: 0 25px;
+        margin-left: 10px;
+        line-height: 240%;
+        color: #6912cb;
+        margin-top: 40px;
+        transition: 0.5s;
+        border-radius: 7px;
+        border: 1px solid #6912cb;
+        background: rgba(0, 0, 0, 0);
+      }
+      button.down:hover {
+        background: #1d953f;
+        transition: 0.5s;
+        box-shadow: 0 10px 20px #95abe0;
+      }
+      button.play:hover {
+        background: linear-gradient(to right, #6912cb, #2475fc);
+        transition: 0.5s;
+        box-shadow: 0 10px 20px #95abe0;
+        color: #fff;
+      }
+
+      div.navi {
+        color: #fff;
+        font-size: 20px;
+        position: absolute;
+        right: 10%;
+        margin: 0;
+        display: inline-block;
+        height: 60px;
+        line-height: 300%;
+        padding: 0 10px;
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+      div.navi:hover {
+        background: #e2eaff;
+        color: #6912cb;
+      }
+      span.bbh {
+        opacity: 0.9;
+        font-size: 11px;
+        margin-left: 5px;
+      }
+      .dropdown-menu {background:#fff;border:none;padding:0;
+        border-radius:13px;box-shadow:0 10px 20px #e2eaff;min-width:130px;}
+      .dropdown-item {color:grey;border-radius:13px;margin:6px;padding:6px 10px;width:120px;transition:all 0.3s;text-align:center;}
+      .dropdown-item:hover {background:#e2eaff;}
+    </style>
+    <script>
+        function mainCheck() {
+        	var ua = navigator.userAgent.toLowerCase();
+        	if (ua.match(/micromessenger/i) == "micromessenger") {
+        		return true;
+        	}
+        	else {
+        		return false;
+        	}
+        }
+
+        if (mainCheck()) {
+        	document.writeln("<div class=\"alert alert-success\" style=\"margin:0;\">您正在使用微信访问本站，可能无法正常下载APP</div>");
+        }
+    </script>
+  </head>
+  <body>
+    	<div id="mainCheck" style="margin:0;"></div>
+    <!-- <div class="alert alert-danger" style="margin:0;">Beta 4版本（ver 1.5）还未开放下载，请收到更新提示的用户不要点击下载链接。</div> -->
+    <div class="aidaodiv">
+      🕯️我们在此向“3·22莫斯科近郊恐怖袭击事件”的遇难者献上诚挚的哀悼。<a
+        href="https://baike.baidu.com/item/3%C2%B722%E8%8E%AB%E6%96%AF%E7%A7%91%E8%BF%91%E9%83%8A%E9%9F%B3%E4%B9%90%E5%8E%85%E6%9E%AA%E5%87%BB%E4%BA%8B%E4%BB%B6"
+        target="_blank"
+        >了解更多</a
+      > 
+    </div>
+    <div class="top">
+      <div class="logoi">
+        <img
+          src="https://13511974.s21i.faiusr.com/4/10/ABUIABAEGAAgtYKprwYogdCP3wYwjAI4wgE.png"
+          height="60px"
+        />
+        <span class="app">Beta</span>
+      </div>
+     <div class="dropdown">
+      <div data-toggle="dropdown" class="navi">
+        <i class="fa fa-bars"></i>
+      </div>
+<div class="dropdown-menu">
+    <a class="dropdown-item" href="/game/">网站首页</a>
+    <a class="dropdown-item" href="/game/history">版本记录</a>
+    <a class="dropdown-item" href="/game/questions">常见问题</a>
+    <a class="dropdown-item" href="/game/privacy">服务协议</a>
+    <a class="dropdown-item" href="/game/privacy">隐私政策</a>
+  </div>
+</div>
+    </div>
+
+    <div class="banne">
+      <h1>两周年庆 无需联网的安卓APP隆重上线</h1>
+      <p style="text-align: center">
+        <button
+          class="down"
+          onclick="window.location.href='https://wwb.lanzout.com/imo7o1rui3wh'"
+        >
+          安卓下载
+        </button>
+
+        <button class="play" onclick="window.location.href='/game/cdlwh'">
+          网页经典
+        </button>
+      </p>
+    </div>
+
+    <div class="btm"><p>© 2022-2024 春潮互动娱乐</p></div>
+  </body>
+</html>
