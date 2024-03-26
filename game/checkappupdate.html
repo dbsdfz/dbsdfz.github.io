@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>东风汽车奕派</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		body {margin:0;padding:0;}
+		h3.zxgre {margin:0;line-height:300%;color:green;text-align: center;width:100%;font-weight:semi-bold;}
+		h3.zxred {margin:0;line-height:300%;color:red;text-align: center;width:100%;font-weight:semi-bold;}
+		h3.zxbla {margin:0;line-height:300%;color:black;text-align: center;width:100%;font-weight:semi-bold;}
+		::selection {background:rgba(135,206,250,0.7);color:#000;}
+		p.zxjm {margin:0;line-height:140%;color:#3c3c3c;text-align: center;width:100%;font-size:15px;}
+		a {margin-left:10px;color:darkgrey;text-decoration: none;opacity:0.8;}
+		span.gx {font-size:13px;padding:7px 5px;border-radius:5px;color:grey;}
+	</style>
+	<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 拉取版本查询参数
+            var urlParams = new URLSearchParams(window.location.search);
+            var currentVersion = urlParams.get('version');
+
+            if (currentVersion === '1') {
+		document.getElementById('versiondiv0').style.display = 'none';
+                document.getElementById('versiondiv1').style.display = 'block';
+                document.getElementById('versiondiv2').style.display = 'none';
+            } else if (currentVersion === '2') {
+		document.getElementById('versiondiv0').style.display = 'none';
+                document.getElementById('versiondiv1').style.display = 'none';
+                document.getElementById('versiondiv2').style.display = 'block';
+            } else {
+                // 如果没有拉取到正确的version值
+		document.getElementById('versiondiv0').style.display = 'block';
+                document.getElementById('versiondiv1').style.display = 'none';
+                document.getElementById('versiondiv2').style.display = 'none';
+            }
+        });
+	</script>
+</head>
+<body>
+	<div id="versiondiv0">
+	<h3 class="zxgre">恭喜，您的游戏版本已经是最新！</h3>
+	<p class="zxjm">您的版本号：ver 1.2（Beta 3）<br>最高版本号：ver 1.2（Beta 3）<br><span class="gx">更多服务请前往 https://dbsdfz.github.io/game/ 查看。（长按链接复制）</span></p>
+	</div>
+	<div id="versiondiv1">
+	<h3 class="zxgre">恭喜，您的游戏版本已经是最新！</h3>
+	<p class="zxjm">您的版本号：ver 1.5（Beta 4）<br>最高版本号：ver 1.5（Beta 4）</p>
+	</div>
+	<div id="versiondiv2">
+	<h3 class="zxbla">拉取不到正确的APP版本号</h3>
+	<p class="zxjm">您的版本号：未知<br>最高版本号：ver 1.5（Beta 4）<br><span class="gx">建议您前往 https://dbsdfz.github.io/game/ 查看详情。（长按链接复制）</span></p>
+	<h3 class="zxred">您的游戏有新的版本待更新！</h3>
+	<p class="zxjm">您的版本号：ver 1.2（Beta 3）<br>最高版本号：ver 1.5（Beta 4）<br><span class="gx">请前往 https://dbsdfz.github.io/game/ 更新软件。（长按链接复制）</span></p>
+	</div>
+
+
+</body>
+</html>
